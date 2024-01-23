@@ -1,0 +1,89 @@
+{
+    "store.custom#quem-somos": {
+        "blocks": ["flex-layout.row#quem-somos"]
+    }, 
+    "flex-layout.row#quem-somos": {
+        "title": "Colunas",
+        "props": { 
+            "horizontalAlign": "between",
+            "verticalAlign": "top",
+            "marginTop": 8,
+            "marginBottom": 9
+        },
+        "children": [ 
+            "flex-layout.col#qs-col1-insti-padrao",
+            "flex-layout.col#qs-col2-insti-padrao"
+        ]
+    }, 
+    "flex-layout.col#qs-col1-insti-padrao": {
+        "title": "Coluna Menu",
+        "props": {
+            "blockClass": "col1-insti-padrao",
+            "width": "24%"
+        },
+        "children": [
+            "rich-text#menu-institucional"
+        ]
+    },
+    "flex-layout.col#qs-col2-insti-padrao": {
+        "title": "Coluna de Texto",
+        "props": {
+            "blockClass": "pp-col2-insti-padrao",
+            "width": "73%"
+        },
+        "children": [
+            "flex-layout.row#qs-header-txt-inst",
+            "flex-layout.row#qs-txt-inst-principal"
+        ]
+    },
+    
+    "flex-layout.row#qs-txt-inst-principal": {
+        "title": "Texto da página",
+        "children": [      
+            "rich-text#qs-txt-inst-principal"
+        ] 
+    }, 
+    "flex-layout.row#qs-header-txt-inst": {
+        "title": "Títulos da página",
+        "children": [      
+            "flex-layout.col#qs-txt-inst-titulo",
+            "flex-layout.col#qs-txt-inst-subtitulo"
+        ],
+        "props": {         
+            "blockClass": "header-default" 
+        }
+    },
+    "flex-layout.col#qs-txt-inst-titulo": {
+        "title": "Linha título da página",
+        "children": [ "rich-text#qs-txt-inst-titulo" ],
+        "props": { "width": "100%" }
+    }, 
+    "flex-layout.col#qs-txt-inst-subtitulo": {
+        "title": "Linha subtítulo da página",
+        "children": [ "rich-text#qs-txt-inst-subtitulo" ],
+        "props": { "width": "100%" }
+    }, 
+    "rich-text#qs-txt-inst-titulo": {
+        "title": "Título da página",
+        "props": {
+            "text": "## QUEM SOMOS ##",
+            "blockClass": "defaultBigTitle"
+        }
+    },
+    "rich-text#qs-txt-inst-subtitulo": {
+        "title": "Subtítulo da página",
+        "props": {
+            "text": "BEM-VINDO (A) AO UNIVERSO TETÊ CASTANHA!",
+            "blockClass": "defaultSubtitle",
+            "fullWidth": true
+        }
+    },
+    "rich-text#qs-txt-inst-principal": {
+        "title": "Texto da página",
+        "props": {
+            "text": "",
+            "blockClass": "txt-inst-principal",
+            "fullWidth": true
+        }
+    }
+}

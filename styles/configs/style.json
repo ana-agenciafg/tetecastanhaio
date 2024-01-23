@@ -57,8 +57,8 @@
         "background": {
           "base": "#ffffff",
           "base--inverted": "#03044e",
-          "action-primary": "#0F3E99",
-          "action-secondary": "#eef3f7",
+          "action-primary": "#5c7f71",
+          "action-secondary": "#87ab9d",
           "emphasis": "#f71963",
           "disabled": "#f2f4f5",
           "success": "#8bc34a",
@@ -72,25 +72,9 @@
           "muted-3": "#cacbcc",
           "muted-4": "#e3e4e6",
           "muted-5": "#f2f4f5"
-        },
-        "hover-background": {
-          "action-primary": "#072c75",
-          "action-secondary": "#dbe9fd",
-          "emphasis": "#dd1659",
-          "success": "#8bc34a",
-          "success--faded": "#eafce3",
-          "danger": "#e13232",
-          "danger--faded": "#ffe6e6",
-          "warning": "#ffb100",
-          "warning--faded": "#fff6e0",
-          "muted-1": "#727273",
-          "muted-2": "#979899",
-          "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
-          "muted-5": "#f2f4f5"
-        },
+        }, 
         "active-background": {
-          "action-primary": "#0c389f",
+          "action-primary": "#9DB0AC",
           "action-secondary": "#d2defc",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -106,9 +90,9 @@
           "muted-5": "#f2f4f5"
         },
         "text": {
-          "action-primary": "#0F3E99",
+          "action-primary": "#5c7f71",
           "action-secondary": "#eef3f7",
-          "link": "#0F3E99",
+          "link": "#5c7f71",
           "emphasis": "#f71963",
           "disabled": "#979899",
           "success": "#8bc34a",
@@ -124,22 +108,10 @@
           "muted-5": "#f2f4f5"
         },
         "visited-text": {
-          "link": "#0c389f"
-        },
-        "hover-text": {
-          "action-primary": "#072c75",
-          "action-secondary": "#dbe9fd",
-          "link": "#0c389f",
-          "emphasis": "#dd1659",
-          "success": "#8bc34a",
-          "success--faded": "#eafce3",
-          "danger": "#e13232",
-          "danger--faded": "#ffe6e6",
-          "warning": "#ffb100",
-          "warning--faded": "#fff6e0"
-        },
+          "link": "#9DB0AC"
+        }, 
         "active-text": {
-          "link": "#0c389f",
+          "link": "#9DB0AC",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
@@ -149,7 +121,7 @@
           "warning--faded": "#fff6e0"
         },
         "border": {
-          "action-primary": "#0F3E99",
+          "action-primary": "#5c7f71",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#e3e4e6",
@@ -164,25 +136,9 @@
           "muted-3": "#cacbcc",
           "muted-4": "#e3e4e6",
           "muted-5": "#f2f4f5"
-        },
-        "hover-border": {
-          "action-primary": "#072c75",
-          "action-secondary": "#dbe9fd",
-          "emphasis": "#dd1659",
-          "success": "#8bc34a",
-          "success--faded": "#eafce3",
-          "danger": "#e13232",
-          "danger--faded": "#ffe6e6",
-          "warning": "#ffb100",
-          "warning--faded": "#fff6e0",
-          "muted-1": "#727273",
-          "muted-2": "#979899",
-          "muted-3": "#cacbcc",
-          "muted-4": "#e3e4e6",
-          "muted-5": "#f2f4f5"
-        },
+        }, 
         "active-border": {
-          "action-primary": "#0c389f",
+          "action-primary": "#9DB0AC",
           "action-secondary": "#d2defc",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
@@ -201,7 +157,7 @@
           "base": "#3f3f40",
           "base--inverted": "#ffffff",
           "action-primary": "#ffffff",
-          "action-secondary": "#0F3E99",
+          "action-secondary": "#5c7f71",
           "emphasis": "#ffffff",
           "disabled": "#979899",
           "success": "#ffffff",
@@ -215,21 +171,10 @@
           "muted-3": "#3f3f40",
           "muted-4": "#3f3f40",
           "muted-5": "#3f3f40"
-        },
-        "hover-on": {
-          "action-primary": "#ffffff",
-          "action-secondary": "#0F3E99",
-          "emphasis": "#ffffff",
-          "success": "#ffffff",
-          "success--faded": "#3f3f40",
-          "danger": "#ffffff",
-          "danger--faded": "#3f3f40",
-          "warning": "#ffffff",
-          "warning--faded": "#1a1a1a"
-        },
+        }, 
         "active-on": {
           "action-primary": "#ffffff",
-          "action-secondary": "#0F3E99",
+          "action-secondary": "#5c7f71",
           "emphasis": "#ffffff",
           "success": "#ffffff",
           "success--faded": "#3f3f40",
@@ -242,7 +187,7 @@
       "borderWidths": [0, 0.125, 0.25, 0.5, 1, 2],
       "borderRadius": [0, 0.125, 0.25, 0.5, 1],
       "widths": [1, 2, 4, 8, 16],
-      "maxWidths": [1, 2, 4, 8, 16, 32, 48, 64, 96],
+      "maxWidths": [1, 2, 4, 8, 16, 32, 48, 64, 81],
       "heights": [1, 2, 4, 8, 16],
       "sizes": [
         {"name": "small", "value": 2},
@@ -251,86 +196,86 @@
       ],
       "typography":{
         "measure": [30, 34, 20],
-        "styles": {
+        "styles": { 
           "heading-1": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
-            "fontWeight": "700",
+            "fontFamily": "Acrom-Bold",
+            "fontWeight": "normal",
             "fontSize": "3rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-2": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
-            "fontWeight": "700",
+            "fontFamily": "Acrom-Bold", 
+            "fontWeight": "normal",
             "fontSize": "2.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-3": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
-            "fontWeight": "700",
+            "fontFamily": "Acrom-Bold", 
+            "fontWeight": "normal",
             "fontSize": "1.75rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-4": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Bold",
             "fontWeight": "normal",
             "fontSize": "1.5rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-5": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Bold",
             "fontWeight": "normal",
             "fontSize": "1.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "heading-6": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Bold",
             "fontWeight": "normal",
             "fontSize": "1.25rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "body": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Regular",
             "fontWeight": "normal",
-            "fontSize": "1rem",
+            "fontSize": "14px",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "small": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Regular",
             "fontWeight": "normal",
             "fontSize": "0.875rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "mini": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Regular",
             "fontWeight": "normal",
             "fontSize": "0.75rem",
             "textTransform": "initial",
             "letterSpacing": "0"
           },
           "action": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Regular",
             "fontWeight": "500",
             "fontSize": "1rem",
             "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "action--small": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Regular",
             "fontWeight": "500",
             "fontSize": "0.875rem",
             "textTransform": "uppercase",
             "letterSpacing": "0"
           },
           "action--large": {
-            "fontFamily": "San Francisco, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif",
+            "fontFamily": "Acrom-Regular",
             "fontWeight": "500",
             "fontSize": "1.25rem",
             "textTransform": "uppercase",

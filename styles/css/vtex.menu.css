@@ -1,0 +1,110 @@
+@media (min-width: 640px) {  
+    .styledLinkContent--submenu-header:hover{
+        font-family: 'Acrom-Medium'; 
+    }
+    .styledLinkContent--submenu-header{
+        text-transform: uppercase;
+    }
+    .menuItem--submenu-header{
+        margin: 4px;
+    }
+    .menuContainer--menu-principal-header{
+        position: relative; 
+    }
+    .menuItem--header-cat-nivel1 :global(.vtex-menu-2-x-submenuWrapper){
+        left: 0;
+        margin-top: 10px;
+        width: 100%;
+        padding: 20px;
+        border: 0 !important;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    }
+    .menuItem--submenu-header-vertodos{
+        display: none;
+    }
+    .styledLinkContent--header-cat-nivel1{
+        color: #fff;
+        display: block;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin: 0 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .styledLinkContainer--header-cat-nivel1{
+        margin-right: 0;
+        margin-left: 0;
+    } 
+    .styledLinkContent--menu-footer-item{
+        color: #000;
+        font-size: 12px; 
+    }
+    .styledLinkContainer--menu-footer-item{
+        padding: 0;
+        margin: 5px 0;
+    } 
+} 
+@media (max-width: 639px) { 
+    .menuItem--links-usuario{
+        background-color: #f3f3f3;
+    }
+    .styledLinkContainer--links-usuario{
+        border-color: #ffffff !important;
+    }
+    .styledLinkContent--header-cat-nivel1{ 
+        text-transform: uppercase;
+        font-family: 'Acrom-Medium';
+    }
+    .submenuAccordion{
+        padding: 0;
+    }
+    .submenuAccordion :global(.vtex-menu-2-x-menuContainerNav){
+        width: 100%;
+    }
+    .menuContainerNav--menu-mobile-menu{
+        width: 100%;
+    }
+    .accordionIcon--header-cat-nivel1{
+        font-size: 0;
+    }
+    .accordionIcon--header-cat-nivel1::after{
+        color: #bcbcbc;
+        content: "▼";
+        font-size: 14px;
+    }
+    .styledLinkContent--submenu-header{
+        text-transform: uppercase;
+        padding: 15px 20px 12px 40px;
+        border-bottom: 1px solid #dadada;
+    }
+    .styledLinkContainer--menu-footer-item{
+        margin: 0;
+    }
+    .styledLinkContent--menu-footer-item{
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .styledLinkContainer--submenu-header {
+        margin: 0;
+        padding: 0;
+    }
+    .menuItem--header-cat-nivel1{
+        width: 100%;
+
+    }
+    .menuContainerNav--header-category-menu{
+        width: 100%;
+    }
+    .menuContainer--header-category-menu {  
+        width: 100%;
+    }
+    .menuContainer--header-category-menu :global(.vtex-menu-2-x-menuContainer ){
+        flex-direction: column;
+        width: 100%;
+    }
+    .styledLinkContainer--header-cat-nivel1{
+        margin: 0;
+        padding: 17px 20px 15px 20px;
+        border-bottom: 1px solid #dadada;
+    }
+}

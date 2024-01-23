@@ -1,0 +1,31 @@
+.container {
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+}
+.link, .term {
+    color: #969696;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+} 
+.link{
+    font-family: "Acrom-Regular";
+}
+.term {
+    font-family: "Acrom-Bold";
+}
+.caretIcon{
+    display: none;
+}
+.arrow::before{
+    content: "|";
+}
+.homeIcon {
+    display: none;
+}
+.homeLink::before{
+    content: "HOME";
+    position: relative;
+    top: 2px;
+}

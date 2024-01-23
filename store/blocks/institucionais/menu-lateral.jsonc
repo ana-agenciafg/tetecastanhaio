@@ -1,0 +1,8 @@
+{
+    "rich-text#menu-institucional": {
+        "props": {
+            "text": "## NAVEGUE ## \n [SOBRE A TETÊ CASTANHA](https://tetecastanha.myvtex.com/institucional/politica-de-privacidade) \n [POLÍTICA DE PRIVACIDADE](https://tetecastanha.myvtex.com/institucional/politica-de-privacidade)",
+            "blockClass": "menu-institucional" 
+        }
+    }
+}

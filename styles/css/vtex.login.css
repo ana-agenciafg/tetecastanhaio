@@ -1,0 +1,22 @@
+.content--accountOptions,.contentForm {
+    padding: 0;
+}
+.emailPasswordOptionBtn :global(.vtex-button__label){
+    color: white;
+    font-size: 13px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.accessCodeOptionBtn :global(.vtex-button__label){
+    color: white;
+    font-size: 13px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button),.accessCodeOptionBtn :global(.vtex-button){
+    background-color: #5c7f71 !important;
+}
+.emailPasswordOptionBtn :global(.vtex-button):hover,.accessCodeOptionBtn :global(.vtex-button):hover{
+    background-color: #5c7f71d0 !important;
+}

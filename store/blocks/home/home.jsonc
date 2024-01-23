@@ -1,33 +1,37 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
+      "list-context.image-list#fullbannerHome", 
+      "responsive-layout.phone#mosaico-de-banners-dois",
       "__fold__",
-      "rich-text#shelf-title",
+      "flex-layout.row#header-shelf",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#prod-destaque-home",
+      "flex-layout.row#header-shelf2",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#destaques-home",
+      "flex-layout.row#header-shelf3",
+      "flex-layout.row#shelf3",
+      "flex-layout.row#texto-sobre",
+      "flex-layout.row#instagram-home",
+      "flex-layout.row#clientes-home",
+      "flex-layout.row#clientes-itens-home"
     ]
   },
 
-  "list-context.image-list#demo": {
+  "list-context.image-list#fullbannerHome": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 570,
+      "height": "auto",
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "image": "assets/imgs/banners/home/fullbanner.webp",
+          "mobileImage": "assets/imgs/banners/home/mobile-fullbanner.webp"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "assets/imgs/banners/home/fullbanner-2.webp",
+          "mobileImage": "assets/imgs/banners/home/mobile-fullbanner-2.webp"
         }
       ]
     }
@@ -41,20 +45,45 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "fullbanner-home"
     }
   },
 
+  // INICIO CONFIGS SHELF 
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#prateleira1"]
+  },
+  "flex-layout.row#header-shelf": {
+    "children": [      
+      "flex-layout.col#shelf-title",
+      "flex-layout.col#shelf-subtitle" 
+    ],
+    "props": { 
+      "blockClass": "header-shelf" 
+    }
+  },
+  "flex-layout.col#shelf-title": {
+    "children": [ "rich-text#shelf-title" ],
+    "props": { "width": "100%" }
+  }, 
+  "flex-layout.col#shelf-subtitle": {
+    "children": [ "rich-text#shelf-subtitle" ],
+    "props": { "width": "100%" }
+  }, 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## BEST SELLERS ##",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
+  "rich-text#shelf-subtitle": {
+    "props": {
+      "text": "Os mais vendidos",
+      "blockClass": "shelfSubtitle",
+      "fullWidth": true
+    }
+  }, 
+  "list-context.product-list#prateleira1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
@@ -74,31 +103,116 @@
     }
   },
 
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
+    // SHELF 2 
+      
+    "flex-layout.row#shelf2": {
+      "children": ["list-context.product-list#prateleira2"]
+    },
+    "flex-layout.row#header-shelf2": {
+      "children": [      
+        "flex-layout.col#shelf2-title",
+        "flex-layout.col#shelf2-subtitle" 
+      ],
+      "props": { 
+        "blockClass": "header-shelf" 
+      }
+    },
+    "flex-layout.col#shelf2-title": {
+      "children": [ "rich-text#shelf2-title" ],
+      "props": { "width": "100%" }
+    }, 
+    "flex-layout.col#shelf2-subtitle": {
+      "children": [ "rich-text#shelf2-subtitle" ],
+      "props": { "width": "100%" }
+    }, 
+    "rich-text#shelf2-title": {
+      "props": {
+        "text": "## SHOP NOW ##",
+        "blockClass": "shelfTitle"
+      }
+    },
+    "rich-text#shelf2-subtitle": {
+      "props": {
+        "text": "Para presentear quem você ama",
+        "blockClass": "shelfSubtitle",
+        "fullWidth": true
+      }
+    }, 
+    "list-context.product-list#prateleira2": {
+      "blocks": ["product-summary.shelf"],
+      "children": ["slider-layout#demo-products"],
+      "props": {
+        "orderBy": "OrderByTopSaleDESC",
+        "category": "47"
+      }
+    },
+    "slider-layout#demo-products": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 3,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    },
 
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
-    }
-  }
+    // SHELF 3
+      
+    "flex-layout.row#shelf3": {
+      "children": ["list-context.product-list#prateleira3"]
+    },
+    "flex-layout.row#header-shelf3": {
+      "children": [      
+        "flex-layout.col#shelf3-title",
+        "flex-layout.col#shelf3-subtitle" 
+      ],
+      "props": { 
+        "blockClass": "header-shelf" 
+      }
+    },
+    "flex-layout.col#shelf3-title": {
+      "children": [ "rich-text#shelf3-title" ],
+      "props": { "width": "100%" }
+    }, 
+    "flex-layout.col#shelf3-subtitle": {
+      "children": [ "rich-text#shelf3-subtitle" ],
+      "props": { "width": "100%" }
+    }, 
+    "rich-text#shelf3-title": {
+      "props": {
+        "text": "## KITS SURPREENDENTES ##",
+        "blockClass": "shelfTitle"
+      }
+    },
+    "rich-text#shelf3-subtitle": {
+      "props": {
+        "text": "Você vai amar essa seleção",
+        "blockClass": "shelfSubtitle",
+        "fullWidth": true
+      }
+    }, 
+    "list-context.product-list#prateleira3": {
+      "blocks": ["product-summary.shelf"],
+      "children": ["slider-layout#demo-products"],
+      "props": {
+        "orderBy": "OrderByTopSaleDESC",
+        "category": "12"
+      }
+    },
+    "slider-layout#demo-products": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 3,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    } 
+  // FIM - INICIO CONFIGS SHELF  
 }

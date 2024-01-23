@@ -1,0 +1,403 @@
+{
+  "store.search": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#brand": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#department": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#category": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#subcategory": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop": {
+    "children": [
+      "condition-layout.category#texto-topo-assinatura",
+      "flex-layout.row#searchbread", 
+      "flex-layout.row#BannerTopo",
+      "flex-layout.row#linhaFiltros",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore", 
+      "flex-layout.row#TxtFimDaPag",
+      "flex-layout.row#clientes-home",
+      "flex-layout.row#clientes-itens-home"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid",
+      "blockClass": "searchResultDesktop" 
+    }
+  }, 
+  "flex-layout.row#BannerTopo": {
+    "title": "Banner Topo",
+    "children": ["image#search-top-banner"],
+    "props": { 
+      "fullWidth": true 
+    }
+  },
+  "flex-layout.row#BannerTopoMobile": {
+    "title": "Banner Topo Mobile",
+    "children": ["image#search-top-banner-mobile"],
+    "props": { 
+      "fullWidth": true 
+    }
+  },
+  "flex-layout.row#TxtFimDaPag": {
+    "title": "Texto Fim da Página",
+    "children": ["rich-text#search-top-txt"] ,
+    "props": { 
+      "blockClass": "texto-fim-da-pagina" 
+    }
+  },
+  "flex-layout.row#searchbread": {
+    "title": "Linha Breadcrumb",
+    "children": ["breadcrumb.search#breadcustom"],
+    "props": { 
+      "fullWidth": true 
+    }
+  },
+  "breadcrumb.search#breadcustom": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.row#linhaFiltros": {
+    "title": "Linha opções de Filtro",
+    "children": [ 
+      "flex-layout.col#filter",
+      "flex-layout.col#searchinfo" 
+    ],
+    "props": {
+      "blockClass": "linha-filtros",  
+      "horizontalAlign": "between",
+      "verticalAlign": "middle",
+      "fullWidth": true 
+    }
+  },
+  "flex-layout.row#linhaFiltros-mobile": {
+    "title": "Linha opções de Filtro",
+    "children": [ 
+      "flex-layout.col#filter-mob",
+      "flex-layout.col#searchinfo-mob"
+    ],
+    "props": {
+      "blockClass": "linha-filtros",  
+      "preserveLayoutOnMobile": true, 
+      "horizontalAlign": "between",
+      "fullWidth": true 
+    }
+  },
+  "flex-layout.col#searchtitle": {
+    "children": ["search-title.v2"]
+  },
+  "flex-layout.col#filter": {
+    "title": "Filtro",
+    "children": ["filter-navigator.v3#new"],
+    "props": {
+      "blockClass": "filterCol",
+      "width": "70%"
+    }
+  }, 
+  "flex-layout.col#filter-mob": {
+    "title": "Filtro",
+    "children": ["filter-navigator.v3#new"],
+    "props": {
+      "blockClass": "filterCol",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "width": "50%"
+    }
+  }, 
+  "filter-navigator.v3#new": {
+    "props": {
+      "initiallyCollapsed": true,
+      "showFacetQuantity": false,
+      "showClearAllFiltersOnDesktop": true,
+      "truncateFilters": false,
+      "showClearByFilter": false,
+      "navigationTypeOnMobile": "collapsible",
+      "totalProductsOnMobile": "hide",
+      "showQuantityBadgeOnMobile": false,
+      "filtersTitleHtmlTag": "h5",
+      "drawerDirectionMobile": "drawerRight",
+      "blockClass": "filter-navigator",
+      "fullWidthOnMobile": false
+    }
+},
+  "flex-layout.col#searchinfo": {
+    "title": "Ordenar por",
+    "children": [
+      // "flex-layout.col#productCount", 
+      "flex-layout.row#orderByAndSwitcher"
+    ]
+  },
+  "flex-layout.col#searchinfo-mob": {
+    "title": "Ordenar por",
+    "children": [
+      // "flex-layout.col#productCount", 
+      "flex-layout.row#orderByAndSwitcher"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "width": "50%" 
+    }
+  },
+  "flex-layout.row#orderByAndSwitcher": {
+    "children": ["order-by.v2"],
+    "props": {
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "blockClass": "orderByAndSwitcher",
+      "colGap": 3
+    }
+  },
+  "flex-layout.col#productCount": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountCol"
+    }
+  },
+  "flex-layout.col#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "title": "Linha 'Ver Mais'",
+    "props": {
+      "marginTop": 9,
+      "marginBottom": 4
+    },
+    "children": ["search-fetch-more"]
+  },
+  "search-fetch-previous": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+  "search-fetch-more": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+  "flex-layout.row#products": {
+    "title": "Produtos",
+    "children": ["search-content"] 
+  },
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+
+  "search-result-layout.mobile": {
+    "children": [
+      "condition-layout.category#texto-topo-assinatura",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#BannerTopoMobile",
+      "flex-layout.row#linhaFiltros-mobile",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore",
+      "flex-layout.row#TxtFimDaPag",
+      "flex-layout.row#clientes-home",
+      "flex-layout.row#clientes-itens-home"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.row#searchinfomobile": {
+    "children": [
+      "flex-layout.col#orderByMobile",
+      "flex-layout.col#filterMobile" 
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "around"
+    }
+  },
+
+  "flex-layout.col#orderByMobile": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByMobileCol"
+    }
+  },
+
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountMobileRow"
+    }
+  },
+
+  "flex-layout.col#filterMobile": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterMobileCol"
+    }
+  }, 
+  "search-not-found-layout": {
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
+  },
+
+  "flex-layout.row#notfound": {
+    "children": ["not-found"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#listLayout",
+      "GridSummary": "product-summary.shelf"
+    }
+  },  
+
+  // BANNER 
+  "image#search-top-banner": {
+    "title": "Banner Principal",
+    "props": {
+        "src": "", 
+        "blockClass": "search-top-banner"
+    }
+  },
+  "image#search-top-banner-mobile": {
+    "title": "Banner Principal",
+    "props": {
+        "src": "", 
+        "blockClass": "search-top-banner"
+    }
+  },
+  //FIM - BANNER  
+
+  // TEXTO  
+  "rich-text#search-top-txt": {
+    "title": "Texto Fim da Página",
+    "props": {
+      "text": "",  
+      "marginTop": 0
+    }
+  },
+  //FIM - TEXTO 
+
+  
+  "condition-layout.category#texto-topo-assinatura": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["51"]
+          }
+        }
+      ], 
+      "matchType": "any",
+      "Then": "flex-layout.row#texto-topo-assinatura"
+    }
+  },
+  "flex-layout.row#texto-topo-assinatura": {
+    "title": "Texto Fim da Pag. - Arranjos",
+    "children": [
+      "rich-text#texto-topo-assinatura"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  }, 
+  "rich-text#texto-topo-assinatura": {
+    "title": "Texto Topo - ASSINATURA DE FLORES",
+    "props": {
+      "text": "## ASSINATURA DE FLORES ## \n Um dos nossos principais serviços são as assinaturas florais exclusivas. Para quem deseja ter a casa com flores numa frequência semanal o Estúdio TETÊ CASTANHA tem um trabalho customizado desde o entendimento e elaboração da proposta até o planejamento para que as entregas sejam perfeitas. Nossa equipe pode elaborar os arranjos em sua casa com seus vasos ou também você pode utilizar todo acervo de peças exclusivas de nosso estúdio.", 
+      "blockClass": "txt-topo-assinatura"
+    }
+  }
+}

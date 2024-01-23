@@ -1,0 +1,32 @@
+{
+    "flex-layout.row#instagram-home": {
+        "children": [      
+        "flex-layout.col#instagram-home-title",
+        "flex-layout.col#instagram-home-subtitle" 
+        ],
+        "props": { 
+        "blockClass": "instagram-home" 
+        }
+    },
+    "flex-layout.col#instagram-home-title": {
+        "children": [ "rich-text#instagram-home-title" ],
+        "props": { "width": "100%" }
+    }, 
+    "flex-layout.col#instagram-home-subtitle": {
+        "children": [ "rich-text#instagram-home-subtitle" ],
+        "props": { "width": "100%" }
+    }, 
+    "rich-text#instagram-home-title": {
+        "props": {
+        "text": "## JUNTE-SE A NÓS @TETECASTANHA ##",
+        "blockClass": "defaultBigTitle"
+        }
+    },
+    "rich-text#instagram-home-subtitle": {
+        "props": {
+        "text": "Feliz em ver nossas flores alegrando momentos especiais!",
+        "blockClass": "defaultSubtitle",
+        "fullWidth": true
+        }
+    }
+}

@@ -1,0 +1,428 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop", 
+      "flex-layout.row#footer-copy", 
+      "flex-layout.row#footer-selo-vtex",
+      "image#whats-flutuante"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.row#footer-col-1",
+      "flex-layout.row#footer-col-2"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "menu-row",
+      "horizontalAlign": "between"
+    }
+  },
+  
+  "flex-layout.row#footer-col-1": {
+    "children": [
+      "flex-layout.row#footer-titulos-desktop",
+      "flex-layout.row#footer-contents-desktop"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-col-1",
+      "horizontalAlign": "between",
+      "width": "67%" 
+    }
+  },
+  "flex-layout.row#footer-col-2": {
+    "children": [
+      "newsletter#custom"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-col-2",
+      "width": "30%" 
+    }
+  },
+
+  "newsletter#custom": {
+    "props": {
+      "label": "NEWSLETTER",
+      "placeholder": "Escreva seu e-mail aqui",
+      "blockClass": "newsletter-footer" 
+    }
+  },
+
+  "flex-layout.row#footer-titulos-desktop": {
+    "children": [
+      "flex-layout.col#title-footer1",
+      "flex-layout.col#title-footer2",
+      "flex-layout.col#title-footer3",
+      "flex-layout.col#title-footer4",
+      "flex-layout.col#title-footer5" 
+    ],
+    "props": {
+      "blockClass": "footer-titulos-desktop",
+      "horizontalAlign": "between",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#footer-contents-desktop": {
+    "children": [ 
+      "flex-layout.col#content-footer1",
+      "flex-layout.col#content-footer2",
+      "flex-layout.col#content-footer3",
+      "flex-layout.col#content-footer4",
+      "flex-layout.col#content-footer5"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-contents-desktop",
+      "horizontalAlign": "between",
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#content-footer1": {
+    "children": ["rich-text#footer-txt-atendimento"],
+    "props": {
+      "preventVerticalStretch": true, 
+      "width": "30%"
+    }
+  },
+  "flex-layout.col#content-footer2": {
+    "children": ["vtex.menu@2.x:menu#footer-institucional"],
+    "props": {
+      "preventVerticalStretch": true, 
+      "width": "18%"
+    }
+  },
+  "flex-layout.col#content-footer3": {
+    "children": ["vtex.menu@2.x:menu#footer-duvidas"],
+    "props": {
+      "preventVerticalStretch": true, 
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#content-footer4": {
+    "children": [
+      "flex-layout.row#footer-segurancas"
+    ],
+    "props": {
+      "preventVerticalStretch": true, 
+      "width": "12%"
+    }
+  },
+  "flex-layout.col#content-footer5": {
+    "children": ["flex-layout.row#footer-redes-sociais"],
+    "props": {
+      "colSizing": "auto",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "width": "14%"
+    }
+  },
+
+  
+  "flex-layout.row#footer-segurancas": {
+    "children": ["rich-text#footer-seguranca1","rich-text#footer-seguranca2","rich-text#footer-seguranca3"],
+    "props": { 
+      "horizontalAlign": "left", 
+      "blockClass": "flexRow--wrap",
+      "colSizing": "auto",
+      "width": "100%"
+    }
+  },
+  "flex-layout.row#footer-redes-sociais": {
+    "children": ["rich-text#footer-instagram","rich-text#footer-facebook","rich-text#footer-youtube"],
+    "props": { 
+      "blockClass": "footer-redes-sociais",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+
+
+  "rich-text#footer-txt-atendimento": {
+    "props": {
+      "text": "SAC Whatsapp: +55 (11) 93064-9597 \n E-mail: contato@tetecastanha.com.br \n\n Horários de atendimento: \n De segunda à sábado das 09h às 19h. \n Sábado das 10h as 16h.",
+      "blockClass": "menu-footer-item"
+    }
+  },
+
+  "flex-layout.col#title-footer1": {
+    "children": ["rich-text#title-footer1"],
+    "props": {
+      "width": "30%"
+    }
+  },
+  "flex-layout.col#title-footer2": {
+    "children": ["rich-text#title-footer2"],
+    "props": {
+      "width": "18%"
+    }
+  },
+  "flex-layout.col#title-footer3": {
+    "children": ["rich-text#title-footer3"],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#title-footer4": {
+    "children": ["rich-text#title-footer4"],
+    "props": {
+      "width": "12%"
+    }
+  },
+  "flex-layout.col#title-footer5": {
+    "children": ["rich-text#title-footer5"],
+    "props": {
+      "width": "14%"
+    }
+  },
+
+  "rich-text#title-footer1": {
+    "props": {
+      "text": "### ATENDIMENTO ###",
+      "blockClass": "title-footer"
+    }
+  }, 
+  "rich-text#title-footer2": {
+    "props": {
+      "text": "### INSTITUCIONAL ###",
+      "blockClass": "title-footer"
+    }
+  },
+  "rich-text#title-footer3": {
+    "props": {
+      "text": "### DÚVIDAS ###",
+      "blockClass": "title-footer"
+    }
+  },
+  "rich-text#title-footer4": {
+    "props": {
+      "text": "### SEGURANÇA ###",
+      "blockClass": "title-footer"
+    }
+  },
+  "rich-text#title-footer5": {
+    "props": {
+      "text": "### JUNTE-SE À NÓS ###",
+      "blockClass": "title-footer"
+    }
+  },
+
+  "rich-text#footer-instagram": {
+    "props": {
+      "text": "<a href='https://www.instagram.com/tetecastanha/' target='_blank'>![alt instagram](assets/imgs/icones/icon_instagram.svg)</a>",
+      "blockClass": "menu-footer-redes-sociais"
+    }
+  },
+  "rich-text#footer-facebook": {
+    "props": {
+      "text": "<a target='_blank' href='https://www.facebook.com/tetecastanhaflores'>![alt facebook](assets/imgs/icones/icon_facebook.svg)</a>",
+      "blockClass": "menu-footer-redes-sociais"
+    }
+  },
+  "rich-text#footer-youtube": {
+    "props": {
+      "text": "<a target='_blank' href='https://www.youtube.com/channel/UCdM2PXwL6LmHV96CFMk6BNw'>![alt youtube](assets/imgs/icones/icon_youtube.svg)</a>",
+      "blockClass": "menu-footer-redes-sociais"
+    }
+  },
+
+  "rich-text#footer-seguranca1": {
+    "props": {
+      "text": "<a href='https://secure.vtex.com/?an=tetecastanha' target='_blank'>![alt seguranca](/arquivos/pci.png)</a>",
+      "blockClass": "menu-footer-seguranca"
+    }
+  },
+  "rich-text#footer-seguranca2": {
+    "props": {
+      "text": "![alt seguranca](/arquivos/encrypt.png)",
+      "blockClass": "menu-footer-seguranca"
+    }
+  },
+  "rich-text#footer-seguranca3": {
+    "props": {
+      "text": "<a href='https://transparencyreport.google.com/safe-browsing' target='_blank'>![alt seguranca](/arquivos/gsb.png)</a>",
+      "blockClass": "menu-footer-seguranca"
+    }
+  },
+
+  "flex-layout.row#footer-copy": {
+    "children": [
+      "flex-layout.col#footer-txt-copy",
+      "flex-layout.col#footer-pagamentos"
+    ],
+    "props": {
+      "horizontalAlign": "between",
+      "verticalAlign": "middle"
+    }
+  },  
+  "flex-layout.col#footer-txt-copy": {
+    "children": [
+      "rich-text#footer-txt-copy"
+    ],
+    "props": {  
+      "width": "67%" ,
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#footer-pagamentos": {
+    "children": [
+      "rich-text#footer-pagamentos"
+    ],
+    "props": { 
+      "horizontalAlign": "center", 
+      "verticalAlign": "middle",
+      "width": "30%" 
+    }
+  }, 
+  "rich-text#footer-txt-copy": {
+    "props": {
+      "text": "Todos os direitos reservados à MARIA TERESA DE FREITAS CASTANHA FLORES E DECORAÇÕES ME CNPJ 28.503.863/0001-09 - As informações não podem ser reproduzidas total ou parcialmente sem autorização prévia.",
+      "blockClass": "footer-txt-copy"
+    }
+  },  
+  "rich-text#footer-pagamentos": {
+    "props": {
+      "text": "![alt pagamentos](assets/imgs/icones/pagamentos.jpg)",
+      "blockClass": "menu-footer-pagamentos"
+    }
+  }, 
+  "rich-text#footer-txt-copy": {
+    "props": {
+      "text": "Todos os direitos reservados à MARIA TERESA DE FREITAS CASTANHA FLORES E DECORAÇÕES ME CNPJ 28.503.863/0001-09 - As informações não podem ser reproduzidas total ou parcialmente sem autorização prévia.",
+      "blockClass": "footer-txt-copy"
+    }
+  },
+
+  "flex-layout.row#footer-selo-vtex": {
+    "children": [
+      "image#footer-selo-vtex"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "marginTop": 1,
+      "marginBottom": 5
+    }
+  },
+  "image#footer-selo-vtex": {
+    "props": {
+      "src": "assets/imgs/icones/logo-vtex-pink.svg",
+      "maxHeight": "43px",
+      "maxWidth": "115px",
+      "blockClass": "footer-selo-vtex"
+    }
+  },
+  
+  "footer-layout.mobile": {
+    "children": [      
+      "newsletter#custom",  
+      "flex-layout.row#footer-disclosure",
+      "flex-layout.row#footer-copy", 
+      "flex-layout.row#footer-selo-vtex",
+      "image#whats-flutuante"
+    ],
+    "props": {      
+      "preventVerticalStretch": true
+    }
+  },
+
+  // MOBILE  
+  "flex-layout.row#footer-disclosure": {
+    "children": [
+      "disclosure-layout#footer-item-mobile1",
+      "disclosure-layout#footer-item-mobile2",
+      "disclosure-layout#footer-item-mobile3",
+      "disclosure-layout#footer-item-mobile4",
+      "disclosure-layout#footer-item-mobile5" 
+    ],
+    "props": { 
+      "blockClass": "abre-fecha-footer-mobile" 
+    }
+  },
+  "disclosure-layout#footer-item-mobile1": {
+    "children": ["disclosure-trigger#footer-item-mobile1", "disclosure-content#footer-item-mobile1"],
+    "props": {
+      "blockClass": "abre-fecha-footer-mobile",
+      "width": "100%"
+    }
+  },
+  "disclosure-trigger#footer-item-mobile1": {
+    "children": ["rich-text#title-footer1"]
+  },
+  "disclosure-content#footer-item-mobile1": {
+    "children": ["rich-text#footer-txt-atendimento"]
+  },
+  
+  "disclosure-layout#footer-item-mobile2": {
+    "children": ["disclosure-trigger#footer-item-mobile2", "disclosure-content#footer-item-mobile2"],
+    "props": {
+      "blockClass": "abre-fecha-footer-mobile",
+      "width": "100%"
+    }
+  },
+  "disclosure-trigger#footer-item-mobile2": {
+    "children": ["rich-text#title-footer2"]
+  },
+  "disclosure-content#footer-item-mobile2": {
+    "children": ["vtex.menu@2.x:menu#footer-institucional"]
+  },
+  
+  "disclosure-layout#footer-item-mobile3": {
+    "children": ["disclosure-trigger#footer-item-mobile3", "disclosure-content#footer-item-mobile3"],
+    "props": {
+      "blockClass": "abre-fecha-footer-mobile",
+      "width": "100%"
+    }
+  },
+  "disclosure-trigger#footer-item-mobile3": {
+    "children": ["rich-text#title-footer3"]
+  },
+  "disclosure-content#footer-item-mobile3": {
+    "children": ["vtex.menu@2.x:menu#footer-duvidas"]
+  },
+  
+  "disclosure-layout#footer-item-mobile4": {
+    "children": ["disclosure-trigger#footer-item-mobile4", "disclosure-content#footer-item-mobile4"],
+    "props": {
+      "blockClass": "abre-fecha-footer-mobile",
+      "width": "100%"
+    }
+  },
+  "disclosure-trigger#footer-item-mobile4": {
+    "children": ["rich-text#title-footer4"]
+  },
+  "disclosure-content#footer-item-mobile4": {
+    "children": ["flex-layout.row#footer-segurancas"]
+  },
+  
+  "disclosure-layout#footer-item-mobile5": {
+    "children": ["disclosure-trigger#footer-item-mobile5", "disclosure-content#footer-item-mobile5"],
+    "props": {
+      "blockClass": "abre-fecha-footer-mobile",
+      "width": "100%"
+    }
+  },
+  "disclosure-trigger#footer-item-mobile5": {
+    "children": ["rich-text#title-footer5"]
+  },
+  "disclosure-content#footer-item-mobile5": {
+    "children": ["flex-layout.row#footer-redes-sociais"]
+  },
+
+  "image#whats-flutuante": {
+    "props": {
+      "src": "/arquivos/whatsapp.svg?v=637420004843470000",
+      "blockClass": "whats-flutuante",
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=5511930649597",
+        "newTab": true
+      }
+    } 
+  }
+}

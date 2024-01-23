@@ -1,65 +1,76 @@
-.flexRowContent--menu-link,
-.flexRowContent--main-header {
-  padding: 0 0.5rem;
+.flexColChild--col-imagem-hover{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+} 
+.flexRowContent--topo-prod-destaque-home{
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 0 50px;
+}  
+.flexRowContent--instagram-home{
+  flex-wrap: wrap;
+  position: relative;
+  margin: 50px 0 50px;
+}  
+.flexRow--destaques-home{
+  background: #f8f9f9;
+  padding: 40px 0 30px;
 }
-
-@media screen and (min-width: 40em) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
-    padding: 0 1rem;
-  }
+.flexRowContent--clientes-home{
+  flex-wrap: wrap;
+  position: relative;
+  margin: 50px 0 0;
+  background: #f8f9f9;
+  padding: 40px 0 0;
 }
-
-@media screen and (min-width: 80rem) {
-  .flexRowContent--menu-link,
-  .flexRowContent--main-header {
-    padding: 0 0.25rem;
-  }
+.flexRowContent--header-default{
+  position: relative;
+  margin: 50px 0 40px; 
+  flex-wrap: wrap;
 }
-
+.flexRow--box-cliente-home-slide{
+  background: #f8f9f9;
+  padding: 50px 0 30px;
+}
+.flexRowContent--texto-sobre-home-wrapper{
+  max-width: 100%;
+  width: 74rem;
+  margin: 0 auto;
+}
+.flexRow--prod-destaque-home{
+  background: #f8f9f9;
+  padding: 30px 0 40px;
+}
+.flexRowContent--texto-sobre-home{
+  background-attachment: local;
+  background-image: url(/arquivos/fundo-sobre.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flexRowContent--prod-destaque-home,.flexRowContent--container-arranjos-mb-home{
+  flex-wrap: wrap;
+}
+.flexRowContent--header-shelf::after, .flexRowContent--topo-prod-destaque-home::after, .flexRowContent--instagram-home::after,.flexRowContent--clientes-home::after, .flexRowContent--header-default::after{
+  bottom: -15px;
+  content: "";
+  height: 2px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 25px;
+  background-color: #5c7f71;
+} 
 .flexRowContent--menu-link {
   background-color: #03044e;
   color: #fff;
 }
 
-.flexRowContent--main-header {
-  background-color: #f0f0f0;
-}
-
-.flexRowContent--main-header-mobile {
-  align-items: center;
-  padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
-}
-
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
-}
-
-.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #727273;
-  font-size: 14px;
-}
-
-.flexRow--deals {
-  background-color: #0F3E99;
-  padding: 14px 0px;
-}
-
-.flexRow--deals .stretchChildrenWidth {
-  align-items: center;
-}
-
-.flexRow--deals .flexCol {
-  align-items: center;
-  margin-bottom: 5px;
-  padding-top: 5px;
-}
-
-.flexCol--filterCol {
-  max-width: 500px;
-  min-width: 230px;
 }
 
 .flexCol--productCountCol {
@@ -95,4 +106,228 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+.flexRow--menu-row{
+  background-color: #f8f9f9;
+}
+.flexRowContent--footer-col-1{
+  flex-wrap: wrap;
+  padding: 15px 0;
+} 
+.flexRowContent--flexRow--wrap{
+  flex-wrap: wrap;
+}
+.flexRow--footer-titulos-desktop{
+  border-bottom: 2px solid #d8d6d6;
+  margin-bottom: 20px;
+} 
+.flexRow--main-header-mobile{
+  background-color: #5c7f71; 
+  padding: 5px 20px 0;
+  align-items: center;
+} 
+.flexRow--main-header-mobile-pesquisa{
+  background-color: #5c7f71;
+  padding: 5px 10px 15px;
+  margin-top: -1px;
+}
+.flexRowContent--header-shelf{
+  flex-wrap: wrap;
+  position: relative; 
+}  
+ 
+.flexRowContent--category-assinatura :global(.vtex-add-to-cart-button-0-x-buttonText)::after{ 
+  content: "Assinar";
+  font-size: 1rem;
+}
+.flexRowContent--category-assinatura :global(.vtex-add-to-cart-button-0-x-buttonText){ 
+  font-size: 0;
+}
+.flexRowContent--texto-fim-da-pagina{
+  border-top: 1px solid #efefef;
+  margin-top: 30px;
+  padding-top: 10px;
+}
+.flexRowContent--texto-fim-da-pagina :global(.vtex-rich-text-0-x-headingLevel2){
+  color: #5c7f71; 
+  font-family: 'Acrom-Regular';
+  letter-spacing: 6px; 
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.flexRowContent--add-to-cart-button{
+  width: 300px; 
+  margin-top: 35px;
+} 
+
+.flexRowContent--add-to-cart-button :global(.vtex-button){ 
+  border-radius: 50px;
+  overflow: hidden;
+  height: 54px; 
+  background-image: url(/arquivos/sacola.png);
+  background-position: 31% 17px;
+  background-repeat: no-repeat;
+  font-family: "Acrom-Bold";
+  text-indent: 15px;
+  border: 0;
+}
+.flexRowContent--add-to-cart-button :global(.vtex-button):hover{
+  background-color: #9db0ac;
+} 
+.flexRowContent--shipping-simulator-pdp :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  flex-wrap: wrap;
+}
+.flexRowContent--shipping-simulator-pdp :global(.vtex-input__label){
+  font-size: 0;
+}
+.flexRowContent--shipping-simulator-pdp :global(.vtex-input__label)::before{
+  content: "CALCULE O SEU FRETE";
+  color: #c6af74;
+  font-family: "Acrom-Bold"; 
+  font-size: 14px!important;
+}
+.flexRowContent--shipping-simulator-pdp :global(.vtex-input__label)::after{
+  content: "Fazemos entregas todos os dias, escolha a melhor data para enviar ou receber suas flores"; 
+  display: block;
+  font-size: 12px; 
+  margin-top: 11px; 
+  color: #313131;
+}
+.flexRow--shipping-simulator-pdp{
+  position: relative;
+}
+.flexRowContent--shipping-simulator-pdp :global(.vtex-address-form-4-x-input){
+  height: 50px;
+}
+.flexRowContent--shipping-simulator-pdp :global(.vtex-button){
+  background: #737373;
+  color: #fff;
+  border-radius: 13px;
+  position: absolute;
+  height: 56px;
+  left: 190px;
+  top: 61px;
+  border: 0;
+  width: 115px;
+} 
+.flexRowContent--shipping-simulator-pdp :global(.vtex-address-form__postalCode-forgottenURL){ 
+  font-size: 12px; 
+  text-decoration: underline;
+}
+
+.flexRowContent--shipping-simulator-pdp :global(.vtex-input-prefix__group){
+  width: 300px;
+  height: fit-content;
+}
+.flexRowContent--shipping-simulator-pdp :global(.vtex-button__label){
+  font-size: 0;
+}
+.flexRowContent--shipping-simulator-pdp :global(.vtex-button__label)::before{
+  content: "CALCULE"; 
+  font-family: "Acrom-Bold";
+  font-size: 13px!important;
+}
+.flexColChild--productSpecificationValue{
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  color: #6a6a6a;
+}
+.flexCol--productSpecificationValue {
+  padding: 0 !important;
+}
+.flexRow--linha-filtros{
+  width: 100%;
+  background-color: #f8f9f9;
+  padding: 12px 0 12px 20px;
+  margin: 0 auto 30px;
+}
+.flexRowContent--linha-filtros{
+  width: 81rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.flexRow--fimdapagina-categoria{
+  border-top: 1px solid #f6f5f5;
+  margin-top: 50px;
+}
+.flexRow--abre-fecha-footer-mobile :global(.vtex-disclosure-layout-1-x-trigger){
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #d8d6d6;
+  padding: 3px 20px 2px;
+}
+.flexRow--abre-fecha-footer-mobile :global(.vtex-store-components-3-x-container){ 
+  padding: 0;
+}
+.flexRow--abre-fecha-footer-mobile :global(.vtex-disclosure-layout-1-x-content){ 
+  background: #f3f3f3; 
+  padding: 10px 20px;
+}
+.flexRow--abre-fecha-footer-mobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth){ 
+  flex-wrap: wrap;
+}
+.flexRow--compra-flutuante{
+  background: #5c7f71;
+  padding: 20px 10px; 
+}
+.flexRowContent--header-col2 :global(.vtex-button){
+  background-color: transparent !important;
+}
+.flexRowContent--hover-submenu-header{
+  align-items: center;
+}
+@media (min-width: 640px) {   
+  .flexCol--header-logo-desktop{
+      margin-right: 40px;
+  }
+  .flexRow--box-cliente-home-slide{
+    margin-bottom: 30px;
+  }
+  .flexRowContent--header-shelf{ 
+    margin: 50px 0 50px;
+  }  
+  .flexCol--pesquisaTopoDesk{
+    position: relative;
+  }
+  .flexCol--pesquisaTopoDesk:hover :global(.vtex-store-components-3-x-searchBarInnerContainer){
+    display: block;
+  } 
+  .flexCol--filterCol {
+    width: 70%;
+  } 
+}
+@media (max-width: 639px) { 
+  .flexCol--pesquisaTopoMob :global(.vtex-store-components-3-x-autoCompleteOuterContainer){ 
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2; 
+  } 
+  .flexRowContent--footer-redes-sociais{
+    display: flex;
+    column-gap: 20px;
+    padding: 10px;
+  }
+  .flexRowContent--header-shelf{ 
+    margin: 30px 0 35px;
+  }  
+  .flexRow--destaques-home{
+    padding: 20px 10px 20px;
+  } 
+  .flexCol--prod-destaque{
+    margin-bottom: 30px;
+  }
+  .flexRowContent--main-header-mobile{
+    align-items: center;
+  }
+  .flexRowContent--main-header-mobile-pesquisa{
+    width: 100%;
+    border-radius: 50px;
+  }  
+  .flexColChild--pesquisaTopoMob, .flexCol--pesquisaTopoMob{ 
+    width: 100%;
+  }
 }

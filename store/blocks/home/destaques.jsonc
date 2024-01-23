@@ -1,0 +1,145 @@
+{ 
+    "flex-layout.row#destaques-home": {
+        "props": {
+            "blockClass": "destaques-home",
+            "horizontalAlign": "center",
+            "verticalAlign": "top"
+        },
+        "children": [ 
+            "flex-layout.row#container-destaques-home"
+        ]
+    }, 
+    "flex-layout.row#container-destaques-home": {
+        "props": {
+            "blockClass": "container-destaques-home",
+            "horizontalAlign": "between",
+            "verticalAlign": "top"
+        },
+        "children": [ 
+            "flex-layout.col#destaque1",
+            "flex-layout.col#destaque2",
+            "flex-layout.col#destaque3"
+        ]
+    }, 
+    "flex-layout.col#destaque1": {
+        "props": {
+            "verticalAlign": "top",
+            "horizontalAlign": "center",
+            "width": "33.33%"
+        },
+        "children": [
+            "flex-layout.col#col-destaque1-img",
+            "rich-text#destaque1-title",
+            "rich-text#destaque1-txt"
+        ]
+    },
+    "flex-layout.col#destaque2": {
+        "props": {
+            "verticalAlign": "top",
+            "horizontalAlign": "center",
+            "width": "33.33%"
+        },
+        "children": [
+            "flex-layout.col#col-destaque2-img",
+            "rich-text#destaque2-title",
+            "rich-text#destaque2-txt"
+        ]
+    },
+    "flex-layout.col#destaque3": {
+        "props": {
+            "verticalAlign": "top",
+            "horizontalAlign": "center",
+            "width": "33.33%"
+        },
+        "children": [
+            "flex-layout.col#col-destaque3-img",
+            "rich-text#destaque3-title",
+            "rich-text#destaque3-txt"
+        ]
+    },
+
+    "flex-layout.col#col-destaque1-img": {
+        "props": {
+            "blockClass": "col-imagem-hover" 
+        },
+        "children": [
+            "image#destaque1-img"
+        ]
+    },
+    "flex-layout.col#col-destaque2-img": {
+        "props": {
+            "blockClass": "col-imagem-hover" 
+        },
+        "children": [
+            "image#destaque2-img"
+        ]
+    },
+    "flex-layout.col#col-destaque3-img": {
+        "props": {
+            "blockClass": "col-imagem-hover" 
+        },
+        "children": [
+            "image#destaque3-img"
+        ]
+    },
+    
+    "image#destaque1-img": {
+        "props": {
+          "src": "assets/imgs/banners/home/destaque-1.webp", 
+          "blockClass": "img-destaques",
+          "width": "100%"
+        }
+    },
+    "image#destaque2-img": {
+        "props": {
+          "src": "assets/imgs/banners/home/destaque-2.webp", 
+          "blockClass": "img-destaques",
+          "width": "100%"
+        }
+    },
+    "image#destaque3-img": {
+        "props": {
+          "src": "assets/imgs/banners/home/destaque-3.webp", 
+          "blockClass": "img-destaques",
+          "width": "100%"
+        }
+    }, 
+
+    "rich-text#destaque1-title": {
+        "props": {
+            "text": "### ASSINATURA DE FLORES ###",
+            "blockClass": "titulo-destaques"
+        }
+    },
+    "rich-text#destaque2-title": {
+        "props": {
+            "text": "### BOUQUET DE NOIVAS ###",
+            "blockClass": "titulo-destaques"
+        }
+    },
+    "rich-text#destaque3-title": {
+        "props": {
+            "text": "### O TOQUE FINAL PARA SEU EVENTO ###",
+            "blockClass": "titulo-destaques"
+        }
+    },
+
+    "rich-text#destaque1-txt": {
+        "props": {
+            "text": "Para quem ama deixar a casa ou escritório sempre florido e alegre, temos planos de assinaturas semanais ou quinzenais. Fale com a gente pelo WhatsApp!",
+            "blockClass": "txt-destaques"
+        }
+    },
+    "rich-text#destaque2-txt": {
+        "props": {
+            "text": "Nossos bouquets são exclusivos e personalizados considerando o vestido e estilo da noiva, local, horário e tipo de cerimônia. Chame a gente pelo WhatsApp e conheça nossas criações para esse momento único na sua vida!",
+            "blockClass": "txt-destaques"
+        }
+    },
+    "rich-text#destaque3-txt": {
+        "props": {
+            "text": "Para aquelas ocasiões especiais em que você gostaria de deixar a casa linda para receber seus convidados ou para momentos únicos como batizados, aniversários e mini-weddings fale com a gente e conheça nosso trabalho!",
+            "blockClass": "txt-destaques"
+        }
+    }
+}

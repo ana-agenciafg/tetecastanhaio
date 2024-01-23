@@ -1,0 +1,464 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-principal-header"
+    },
+    "children": [
+      "menu-item#category-um",
+      "menu-item#category-dois",
+      "menu-item#category-tres",
+      "menu-item#category-quatro",
+      "menu-item#category-cinco", 
+      "menu-item#category-seis" 
+    ]
+  },
+
+  // ITENS NIVEL 1 DO MENU ____ 
+  "menu-item#category-um": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/novidades",
+        "noFollow": false,
+        "tagTitle": "NOVIDADES",
+        "text": "NOVIDADES"
+      }
+    }
+  },
+  "menu-item#category-dois": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "ARRANJOS",
+        "text": "ARRANJOS"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sub-cat-dois"
+    ]
+  }, 
+  "menu-item#category-dois-mobile": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "ARRANJOS",
+        "text": "ARRANJOS"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#sub-cat-dois"
+    ]
+  }, 
+  "menu-item#category-tres": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/essencias?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "ESSÊNCIAS",
+        "text": "ESSÊNCIAS"
+      }
+    }
+  }, 
+  "menu-item#category-quatro": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/orquídeas?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "ORQUÍDEAS",
+        "text": "ORQUÍDEAS"
+      }
+    }
+  }, 
+  "menu-item#category-cinco": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/complementos?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "COMPLEMENTOS",
+        "text": "COMPLEMENTOS"
+      }
+    }
+  }, 
+  "menu-item#category-seis": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/assinatura-de-flores",
+        "noFollow": false,
+        "tagTitle": "ASSINATURA DE FLORES",
+        "text": "ASSINATURA DE FLORES"
+      }
+    }
+  },  
+  "menu-item#category-muranos-mobile": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/muranos",
+        "noFollow": false,
+        "tagTitle": "Muranos",
+        "text": "Muranos"
+      }
+    }
+  }, 
+  "menu-item#category-bouquets-mobile": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "header-cat-nivel1",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bouquets?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Bouquets",
+        "text": "Bouquets"
+      }
+    }
+  }, 
+  "menu-item#category-minha-conta-mobile": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["header-cat-nivel1", "links-usuario"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/account",
+        "noFollow": false,
+        "tagTitle": "Minha Conta",
+        "text": "Minha Conta"
+      }
+    }
+  }, 
+  "menu-item#category-meus-pedidos-mobile": {
+    "props": { 
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["header-cat-nivel1", "links-usuario"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/account/orders",
+        "noFollow": false,
+        "tagTitle": "MEUS PEDIDOS",
+        "text": "MEUS PEDIDOS"
+      }
+    }
+  }, 
+
+  // SUBMENUS___________
+  
+  "vtex.menu@2.x:submenu#sub-cat-dois": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "flex-layout.row#sub-cat-dois"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#sub-cat-dois": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#sub-cat-dois-mobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#sub-cat-dois": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#subcatum-arranjos-em-latas",
+      "menu-item#subcatum-arranjos-em-caixas",
+      "menu-item#subcatum-arranjos-em-vaso",
+      "menu-item#subcatum-arranjos-muranos",
+      "menu-item#subcatum-arranjos-tropicais",
+      "menu-item#subcatum-arranjos-maternidade",
+      "menu-item#subcatum-bouquets",
+      "menu-item#subcatum-ver-todos"
+    ]
+  },
+  "vtex.menu@2.x:menu#sub-cat-dois-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#subcatum-arranjos-em-latas",
+      "menu-item#subcatum-arranjos-em-caixas",
+      "menu-item#subcatum-arranjos-em-vaso",
+      "menu-item#subcatum-arranjos-muranos",
+      "menu-item#subcatum-arranjos-tropicais",
+      "menu-item#subcatum-arranjos-maternidade", 
+      "menu-item#subcatum-ver-todos"
+    ]
+  },
+  "menu-item#subcatum-arranjos-em-latas": {
+    "props": {
+      "blockClass": "submenu-header",
+      "id": "subcatum-arranjos-em-latas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos/arranjos-em-latas?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Arranjos em Latas",
+        "text": "Arranjos em Latas"
+      }
+    }
+  }, 
+  "menu-item#subcatum-arranjos-em-caixas": {
+    "props": {
+      "blockClass": "submenu-header",
+      "id": "subcatum-arranjos-em-caixas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos/arranjos-em-caixas?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Arranjos em Caixas",
+        "text": "Arranjos em Caixas"
+      }
+    }
+  }, 
+  "menu-item#subcatum-arranjos-muranos": {
+    "props": {
+      "blockClass": "submenu-header",
+      "id": "subcatum-arranjos-muranos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/muranos?O=OrderByTopSaleDESC",
+        "noFollow": false,
+        "tagTitle": "Arranjos em Muranos",
+        "text": "Arranjos em Muranos"
+      }
+    }
+  },  
+  "menu-item#subcatum-arranjos-em-vaso": {
+    "props": {
+      "blockClass": "submenu-header",
+      "id": "subcatum-arranjos-em-vaso",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos/arranjos-em-vaso?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Arranjos em Vasos",
+        "text": "Arranjos em Vasos"
+      }
+    }
+  },  
+  "menu-item#subcatum-arranjos-em-sacolas": {
+    "props": {
+      "blockClass": "submenu-header",
+      "id": "subcatum-arranjos-em-sacolas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos/arranjos-em-sacolas?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Arranjos em Sacolas ",
+        "text": "Arranjos em Sacolas "
+      }
+    }
+  },  
+  "menu-item#subcatum-arranjos-tropicais": {
+    "props": {
+      "blockClass": "submenu-header",
+      "id": "subcatum-arranjos-tropicais",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos/arranjos-tropicais?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Arranjos Tropicais",
+        "text": "Arranjos Tropicais"
+      }
+    }
+  }, 
+  "menu-item#subcatum-arranjos-maternidade": {
+    "props": {
+      "blockClass": "submenu-header",
+      "id": "subcatum-arranjos-maternidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos/maternidade?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Arranjos Maternidade",
+        "text": "Arranjos Maternidade"
+      }
+    }
+  }, 
+  "menu-item#subcatum-bouquets": {
+    "props": {
+      "blockClass": "submenu-header",
+      "id": "subcatum-bouquets",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bouquets?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Bouquets",
+        "text": "Bouquets"
+      }
+    }
+  },  
+  "menu-item#subcatum-ver-todos": {
+    "props": {
+      "blockClass": ["submenu-header","submenu-header-vertodos"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false, 
+      "itemProps": {
+        "type": "internal",
+        "href": "/arranjos?O=OrderByReleaseDateDESC",
+        "noFollow": false,
+        "tagTitle": "Ver todos",
+        "text": "Ver todos"
+      }
+    } 
+  }, 
+  "image#sub-cat-dois": {
+    "props": {
+      "src": "assets/imgs/banners/menu/img-menu-arranjos.webp",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "img-submenu"
+    }
+  },
+   
+
+  "vtex.menu@2.x:submenu#sub-cat-dois": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#sub-cat-dois"
+    ]
+  },
+  "flex-layout.row#sub-cat-dois": {
+    "children": [
+      "flex-layout.col#sub-cat-dois-col-1",
+      "flex-layout.col#sub-cat-dois-col-2"
+    ],
+    "props": { 
+      "verticalAlign": "middle",
+      "blockClass": "hover-submenu-header"
+    }
+  },
+  "flex-layout.col#sub-cat-dois-col-1": {
+    "children": [
+      "vtex.menu@2.x:menu#sub-cat-dois"
+    ]
+  },
+  "flex-layout.col#sub-cat-dois-col-2": {
+    "children": [
+      "image#sub-cat-dois"
+    ]
+  },
+  
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "About us"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#contact-us": {
+    "props": {
+      "id": "menu-item-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+    "flex-layout.row#texto-sobre": {
+        "children": [      
+            "flex-layout.row#texto-sobre-wrapper"
+        ],
+        "props": { 
+            "blockClass": "texto-sobre-home",
+            "fullWidth": true
+        }
+    },
+    "flex-layout.row#texto-sobre-wrapper": {
+        "children": [      
+            "flex-layout.col#texto-sobre-col1",
+            "flex-layout.col#texto-sobre-col2"
+        ],
+        "props": { 
+            "verticalAlign": "top",
+            "horizontalAlign": "between",
+            "blockClass": "texto-sobre-home-wrapper",
+            "width": "81rem"
+        }
+    },
+    "flex-layout.col#texto-sobre-col1": {
+        "children": [ 
+            "flex-layout.row#texto-sobre-titulo",
+            "flex-layout.row#texto-sobre-conteudo"
+        ],
+        "props": { 
+            "width": "43%", 
+            "preventVerticalStretch": true 
+        }
+    }, 
+    "flex-layout.col#texto-sobre-col2": {
+        "children": [ 
+            "image#texto-sobre-col2"
+        ],
+        "props": { "width": "53%" }
+    }, 
+    "image#texto-sobre-col2": {
+        "props": {
+          "src": "assets/imgs/banners/home/sobre.webp",  
+          "width": "100%",
+          "blockClass": "img-sobre-home"
+        }
+    }, 
+
+    
+    "flex-layout.row#texto-sobre-titulo": {
+        "children": [  
+            "rich-text#texto-sobre-titulo"
+        ],
+        "props": { "width": "100%" }
+    }, 
+    "flex-layout.row#texto-sobre-conteudo": {
+        "children": [  
+            "rich-text#texto-sobre-conteudo"
+        ],
+        "props": { "width": "100%" }
+    }, 
+    "rich-text#texto-sobre-titulo": {
+        "props": {
+            "text": "## SOBRE A TETÊ CASTANHA ## ",
+            "blockClass": "texto-sobre-titulo"
+        }
+    },
+    "rich-text#texto-sobre-conteudo": {
+        "props": {
+            "text": "Tetê Castanha é apaixonada por flores desde sempre e sua realização é oferecer arranjos que **proporcionam exclusividade e que traduzam toda emoção e sensibilidade** que as flores representam! \n\n\n **Encante-se com esse trabalho** visitando nossa Floricultura na Vila Nova Conceição! \n\n\n “Cada trabalho, não importa o tamanho, é único! Acreditamos que nosso sucesso se dá quando nossos clientes percebem a beleza e energia das flores por meio de nossas criações!”",
+            "blockClass": "texto-sobre-conteudo",
+            "fullWidth": true
+        }
+    }
+}

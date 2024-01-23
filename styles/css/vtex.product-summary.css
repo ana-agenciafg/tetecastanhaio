@@ -1,3 +1,7 @@
+.imageContainer {
+  border: 1px solid #f4f4f4;
+  border-radius: 4px;
+}
 .skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
   border-radius: 50%;
 }
@@ -16,27 +20,81 @@
     display: none;
   }
 }
+.container :global(.vtex-button){ 
+  align-items: center;
+  background-color: #fff;
+  background-image: url(/arquivos/sacola-v.png);
+  background-position: 15%;
+  background-repeat: no-repeat;
+  border: 1px solid #5c7f71;
+  border-radius: 100px;
+  color: #5c7f71;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  height: 50px;
+  justify-content: center;
+  letter-spacing: 1px;
+  margin: 10px auto 0;
+  max-width: 170px;
+  padding: 10px;
+  text-decoration: none;
+  text-indent: 20px;
+}
+
+.container :global(.vtex-button):hover{
+  background-color: #5c7f71;
+  color: #fff;
+  background-image: url(/arquivos/sacola.png);
+}
 
 .nameContainer {
-  justify-content: start;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
+  color: #313131;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px; 
+  text-transform: uppercase;
+  min-height: 60px;
+}
+
+.installments--summary{
+  justify-content: center;
+  text-align: center;
+  color: #313131; 
+  font-size: 14px;  
 }
 
 .container {
   text-align: start;
 }
 
-.imageContainer {
-  text-align: center;
-}
+@media (min-width: 640px) {   
+  .imageContainer {
+    text-align: center;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.image {
-  border-radius: 0.25rem;
+  .image { 
+    max-height: unset !important; 
+  } 
+}
+@media (max-width: 640px) {   
+  .imageContainer {
+    text-align: center;
+    height: 227px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

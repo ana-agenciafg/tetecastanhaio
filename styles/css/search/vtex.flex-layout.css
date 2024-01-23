@@ -1,7 +1,3 @@
-.flexRow--orderByAndSwitcher {
-  padding-right: 1.5em;
-}
-
 .flexRowContent--savingsSummaryListDesktop {
   justify-content: flex-start;
 }
@@ -14,12 +10,7 @@
   background: #eef3f7;
   border-color:#eef3f7;
   color: #0f3e99;
-}
-
-.flexRow--buyNowButton:hover :global(.vtex-button) {
-  background: #dbe9fd;
-  border-color:#dbe9fd;
-}
+} 
 
 .flexCol--productRating {
   margin-bottom: 3rem;

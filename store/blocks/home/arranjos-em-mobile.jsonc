@@ -1,0 +1,263 @@
+{ 
+    "responsive-layout.phone#mosaico-de-banners-dois": {
+        "props": {
+            "marginTop": 7,
+            "blockClass": "arranjos-mb-home",
+            "horizontalAlign": "center",
+            "verticalAlign": "top"
+        },
+        "children": [ 
+            "flex-layout.row#header-arranjos-mb",
+            "flex-layout.row#container-arranjos-mb-home"
+        ]
+    }, 
+    "flex-layout.row#header-arranjos-mb": {
+        "children": [      
+            "flex-layout.col#header-arranjos-mb-title",
+            "flex-layout.col#header-arranjos-mb-subtitle" 
+        ],
+        "props": {         
+            "blockClass": "header-default" 
+        }
+    },
+        "flex-layout.col#header-arranjos-mb-title": {
+            "children": [ "rich-text#header-arranjos-mb-title" ],
+            "props": { "width": "100%" }
+        }, 
+        "flex-layout.col#header-arranjos-mb-subtitle": {
+            "children": [ "rich-text#header-arranjos-mb-subtitle" ],
+            "props": { "width": "100%" }
+        }, 
+        "rich-text#header-arranjos-mb-title": {
+            "props": {
+            "text": "## ARRANJOS EXCLUSIVOS ##",
+            "blockClass": "defaultTitle"
+            }
+        },
+        "rich-text#header-arranjos-mb-subtitle": {
+            "props": {
+            "text": "Tornando seus momentos mais especiais",
+            "blockClass": "defaultSubtitle",
+            "fullWidth": true
+            }
+        }, 
+
+    "flex-layout.row#container-arranjos-mb-home": {
+        "props": { 
+            "marginBottom": 7,
+            "preserveLayoutOnMobile": true,
+            "blockClass": "container-arranjos-mb-home",
+            "horizontalAlign": "between",
+            "verticalAlign": "top" 
+        },
+        "children": [ 
+            "flex-layout.col#arranjo",
+            "flex-layout.col#arranjo2",
+            "flex-layout.col#arranjo3",
+            "flex-layout.col#arranjo4",
+            "flex-layout.col#arranjo5",
+            "flex-layout.col#arranjo6"
+        ]
+    }, 
+        "flex-layout.col#arranjo": {
+            "props": {
+                "verticalAlign": "top",
+                "horizontalAlign": "center",
+                "marginBottom": 4,
+                "width": "25%"
+            },
+            "children": [
+                "flex-layout.col#col-arranjo-img",
+                "rich-text#arranjo-title" 
+            ]
+        },
+        "flex-layout.col#arranjo2": {
+            "props": {
+                "verticalAlign": "top",
+                "horizontalAlign": "center",
+                "marginBottom": 4,
+                "width": "25%"
+            },
+            "children": [
+                "flex-layout.col#col-arranjo2-img",
+                "rich-text#arranjo2-title" 
+            ]
+        },
+        "flex-layout.col#arranjo3": {
+            "props": {
+                "verticalAlign": "top",
+                "horizontalAlign": "center",
+                "marginBottom": 4,
+                "width": "25%"
+            },
+            "children": [
+                "flex-layout.col#col-arranjo3-img",
+                "rich-text#arranjo3-title" 
+            ]
+        },
+        "flex-layout.col#arranjo4": {
+            "props": {
+                "verticalAlign": "top",
+                "horizontalAlign": "center",
+                "marginBottom": 4,
+                "width": "25%"
+            },
+            "children": [
+                "flex-layout.col#col-arranjo4-img",
+                "rich-text#arranjo4-title" 
+            ]
+        },
+        "flex-layout.col#arranjo5": {
+            "props": {
+                "verticalAlign": "top",
+                "horizontalAlign": "center",
+                "marginBottom": 4,
+                "width": "25%"
+            },
+            "children": [
+                "flex-layout.col#col-arranjo5-img",
+                "rich-text#arranjo5-title" 
+            ]
+        },
+        "flex-layout.col#arranjo6": {
+            "props": {
+                "verticalAlign": "top",
+                "horizontalAlign": "center",
+                "marginBottom": 4,
+                "width": "25%"
+            },
+            "children": [
+                "flex-layout.col#col-arranjo6-img",
+                "rich-text#arranjo6-title" 
+            ]
+        },
+
+        "flex-layout.col#col-arranjo-img": {
+            "children": [
+                "image#arranjo-img"
+            ]
+        },
+        "flex-layout.col#col-arranjo2-img": {
+            "children": [
+                "image#arranjo2-img"
+            ]
+        },
+        "flex-layout.col#col-arranjo3-img": {
+            "children": [
+                "image#arranjo3-img"
+            ]
+        },
+        "flex-layout.col#col-arranjo4-img": {
+            "children": [
+                "image#arranjo4-img"
+            ]
+        },
+        "flex-layout.col#col-arranjo5-img": {
+            "children": [
+                "image#arranjo5-img"
+            ]
+        },
+        "flex-layout.col#col-arranjo6-img": {
+            "children": [
+                "image#arranjo6-img"
+            ]
+        },
+        
+        "image#arranjo-img": {
+            "props": {
+            "src": "/arquivos/ids/159038/Design sem nome (18).png", 
+            "blockClass": "img-arranjos",
+            "width": "100%",
+            "link": {
+                "url": "/bouquets?O=OrderByReleaseDateDESC"
+            }
+            }
+        },
+        "image#arranjo2-img": {
+            "props": {
+            "src": "/arquivos/ids/159555/Design sem nome - 2023-06-13T205148.724.png", 
+            "blockClass": "img-arranjos",
+            "width": "100%",
+            "link": {
+                "url": "/novidades"
+            }
+            }
+        },
+        "image#arranjo3-img": {
+            "props": {
+            "src": "arquivos/ids/159040/Design sem nome (20).png", 
+            "blockClass": "img-arranjos",
+            "width": "100%",
+            "link": {
+                "url": "/essencias?O=OrderByReleaseDateDESC"
+            }
+            }
+        },  
+        "image#arranjo4-img": {
+            "props": {
+            "src": "/arquivos/ids/159261/Design sem nome (79).png", 
+            "blockClass": "img-arranjos",
+            "width": "100%",
+            "link": {
+                "url": "/arranjos/arranjos-em-vaso?O=OrderByReleaseDateDESC"
+            }
+            }
+        },
+        "image#arranjo5-img": {
+            "props": {
+            "src": "/arquivos/ids/159043/Design sem nome (24).png", 
+            "blockClass": "img-arranjos",
+            "width": "100%",
+            "link": {
+                "url": "/orquídeas?O=OrderByReleaseDateDESC"
+            }
+            }
+        }, 
+        "image#arranjo6-img": {
+            "props": {
+            "src": "/arquivos/ids/159260/Design sem nome (78).png", 
+            "blockClass": "img-arranjos",
+            "width": "100%",
+            "link": {
+                "url": "/complementos?O=OrderByReleaseDateDESC"
+            }
+            }
+        }, 
+
+        "rich-text#arranjo-title": {
+            "props": {
+                "text": "## Bouquets ##",
+                "blockClass": "titulo-arranjos"
+            }
+        },
+        "rich-text#arranjo2-title": {
+            "props": {
+                "text": "## Novidades ##",
+                "blockClass": "titulo-arranjos"
+            }
+        },
+        "rich-text#arranjo3-title": {
+            "props": {
+                "text": "## Essências ##",
+                "blockClass": "titulo-arranjos"
+            }
+        },
+        "rich-text#arranjo4-title": {
+            "props": {
+                "text": "## Arranjos em Vasos ##",
+                "blockClass": "titulo-arranjos"
+            }
+        },
+        "rich-text#arranjo5-title": {
+            "props": {
+                "text": "## Orquídeas ##",
+                "blockClass": "titulo-arranjos"
+            }
+        },
+        "rich-text#arranjo6-title": {
+            "props": {
+                "text": "## Complementos ##",
+                "blockClass": "titulo-arranjos"
+            }
+        }
+}

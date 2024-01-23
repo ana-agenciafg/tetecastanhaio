@@ -1,0 +1,175 @@
+{ 
+    "flex-layout.row#prod-destaque-home": {
+        "props": {
+            "blockClass": "prod-destaque-home",
+            "horizontalAlign": "center",
+            "verticalAlign": "top" 
+        },
+        "children": [
+            "flex-layout.row#topo-prod-destaque-home",
+            "flex-layout.row#container-prod-destaque-home"
+        ]
+    }, 
+
+    // TOPO 
+    "flex-layout.row#topo-prod-destaque-home": {
+        "children": [      
+            "flex-layout.col#tpdh-title",
+            "flex-layout.col#tpdh-subtitle" 
+        ],
+        "props": { 
+            "blockClass": "topo-prod-destaque-home",
+            "width": "100%"
+        }
+    },
+    "flex-layout.col#tpdh-title": {
+        "children": [ "rich-text#tpdh-title" ],
+        "props": { "width": "100%" }
+    }, 
+    "flex-layout.col#tpdh-subtitle": {
+        "children": [ "rich-text#tpdh-subtitle" ],
+        "props": { "width": "100%" }
+    }, 
+    "rich-text#tpdh-title": {
+        "props": {
+        "text": "## EXCLUSIVO DE NATAL ##",
+        "blockClass": "defaultTitle"
+        }
+    },
+    "rich-text#tpdh-subtitle": {
+        "props": {
+        "text": "Tornando seus momentos mais especiais",
+        "blockClass": "defaultSubtitle",
+        "fullWidth": true
+        }
+    }, 
+    // FIM TOPO 
+
+    "flex-layout.row#container-prod-destaque-home": {
+        "props": {
+            "blockClass": "container-prod-destaque-home",
+            "horizontalAlign": "center",
+            "verticalAlign": "top",
+            "width": "100%",
+            "colSizing": "auto"
+        },
+        "children": [ 
+            "flex-layout.col#prod-destaque1",
+            "flex-layout.col#prod-destaque2",
+            "flex-layout.col#prod-destaque3"
+        ]
+    }, 
+    "flex-layout.col#prod-destaque1": {
+        "props": {
+            "verticalAlign": "top",
+            "blockClass": "prod-destaque",
+            "horizontalAlign": "center",
+            "marginLeft": 6,
+            "marginRight": 6
+        },
+        "children": [
+            "flex-layout.col#col-imagem-hover1",
+            "rich-text#prod-destaque1-title" 
+        ]
+    },
+    "flex-layout.col#prod-destaque2": {
+        "props": {
+            "verticalAlign": "top",
+            "blockClass": "prod-destaque",
+            "horizontalAlign": "center",
+            "marginLeft": 6,
+            "marginRight": 6
+        },
+        "children": [
+            "flex-layout.col#col-imagem-hover2",
+            "rich-text#prod-destaque2-title" 
+        ]
+    },
+    "flex-layout.col#prod-destaque3": {
+        "props": {
+            "verticalAlign": "top",
+            "blockClass": "prod-destaque",
+            "horizontalAlign": "center",
+            "marginLeft": 6,
+            "marginRight": 6
+        },
+        "children": [
+            "flex-layout.col#col-imagem-hover3",
+            "rich-text#prod-destaque3-title" 
+        ]
+    }, 
+
+    "flex-layout.col#col-imagem-hover1": {
+        "props": {
+            "blockClass": "col-imagem-hover" 
+        },
+        "children": [
+            "image#prod-destaque1-img" 
+        ]
+    },
+    "image#prod-destaque1-img": {
+        "props": {
+          "src": "assets/imgs/banners/home/prod-destaque-1.png",
+          "width": "100%",
+          "blockClass": "img-zoom-hover",
+          "link": {
+            "url": "/choco-box---16/p"
+          }
+        }
+    },
+    "flex-layout.col#col-imagem-hover2": {
+        "props": {
+            "blockClass": "col-imagem-hover" 
+        },
+        "children": [
+            "image#prod-destaque2-img" 
+        ]
+    },
+    "image#prod-destaque2-img": {
+        "props": {
+          "src": "assets/imgs/banners/home/prod-destaque-2.png", 
+          "blockClass": "img-zoom-hover",
+          "width": "100%",
+          "link": {
+            "url": "/sogno-di-natale/p"
+          }
+        }
+    },
+    "flex-layout.col#col-imagem-hover3": {
+        "props": {
+            "blockClass": "col-imagem-hover" 
+        },
+        "children": [
+            "image#prod-destaque3-img" 
+        ]
+    },
+    "image#prod-destaque3-img": {
+        "props": {
+          "src": "assets/imgs/banners/home/prod-destaque-3.png", 
+          "blockClass": "img-zoom-hover",
+          "width": "100%",
+          "link": {
+            "url": "/christmas-tree-iii/p"
+          }
+        }
+    }, 
+
+    "rich-text#prod-destaque1-title": {
+        "props": {
+            "text": "## [CHOCOLATE](/choco-box---16/p) ##",
+            "blockClass": "titulo-prod-destaques"
+        }
+    },
+    "rich-text#prod-destaque2-title": {
+        "props": {
+            "text": "## [SOGNO DI NATALE](/sogno-di-natale/p) ##",
+            "blockClass": "titulo-prod-destaques"
+        }
+    },
+    "rich-text#prod-destaque3-title": {
+        "props": {
+            "text": "## [CHRISTMAS TREE III](/choco-box---16/p) ##",
+            "blockClass": "titulo-prod-destaques"
+        }
+    } 
+}

@@ -1,0 +1,200 @@
+{
+    "flex-layout.row#clientes-home": {
+        "children": [      
+            "flex-layout.col#clientes-home-title",
+            "flex-layout.col#clientes-home-subtitle"
+        ],
+        "props": { 
+            "blockClass": "clientes-home",
+            "fullWidth": true
+        }
+    },
+    "flex-layout.col#clientes-home-title": {
+        "children": [ "rich-text#clientes-home-title" ],
+        "props": { "width": "100%" }
+    }, 
+    "flex-layout.col#clientes-home-subtitle": {
+        "children": [ "rich-text#clientes-home-subtitle" ],
+        "props": { "width": "100%" }
+    }, 
+    "rich-text#clientes-home-title": {
+        "props": {
+        "text": "## NOSSOS CLIENTES ##",
+        "blockClass": "defaultBigTitle"
+        }
+    },
+    "rich-text#clientes-home-subtitle": {
+        "props": {
+        "text": "Feliz em ver nossas flores alegrando momentos especiais!",
+        "blockClass": "defaultSubtitle",
+        "fullWidth": true
+        }
+    }, 
+
+    "flex-layout.row#clientes-itens-home": { 
+        "children": ["slider-layout#cliente-home"],
+        "props": { 
+          "blockClass": "box-cliente-home-slide" 
+        }
+    }, 
+    "slider-layout#cliente-home": {
+        "children": [
+            "flex-layout.col#cliente-home1",
+            "flex-layout.col#cliente-home2",
+            "flex-layout.col#cliente-home3",
+            "flex-layout.col#cliente-home4",
+            "flex-layout.col#cliente-home5",
+            "flex-layout.col#cliente-home6"
+        ],
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 4,
+            "phone": 2
+          }, 
+          "infinite": true,
+          "showPaginationDots": "never",
+          "showNavigationArrows": "always",
+          "blockClass": "cliente-home-slide" 
+        }
+    },
+
+
+    "flex-layout.col#cliente-home1": {
+        "props": {
+        "verticalAlign": "top",
+        "horizontalAlign": "center"
+        },
+        "children": [
+            "image#cliente-home1-img",
+            "rich-text#cliente-home1-title" 
+        ]
+    },
+    "image#cliente-home1-img": {
+        "props": {
+        "src": "/arquivos/cliente01.jpg", 
+        "width": "100%" 
+        }
+    },
+    "rich-text#cliente-home1-title": {
+        "props": {
+        "text": "## TICIANE PINHEIRO ##",
+        "blockClass": "cliente-home-title"
+        }
+    }, 
+    
+    "flex-layout.col#cliente-home2": {
+        "props": {
+        "verticalAlign": "top",
+        "horizontalAlign": "center"
+        },
+        "children": [
+            "image#cliente-home2-img",
+            "rich-text#cliente-home2-title" 
+        ]
+    },
+    "image#cliente-home2-img": {
+        "props": {
+        "src": "/arquivos/cliente02.jpg", 
+        "width": "100%" 
+        }
+    },
+    "rich-text#cliente-home2-title": {
+        "props": {
+        "text": "## FAFÁ DE BELÉM ##",
+        "blockClass": "cliente-home-title"
+        }
+    }, 
+    
+    "flex-layout.col#cliente-home3": {
+        "props": {
+        "verticalAlign": "top",
+        "horizontalAlign": "center"
+        },
+        "children": [
+        "image#cliente-home3-img",
+        "rich-text#cliente-home3-title" 
+        ]
+    },
+    "image#cliente-home3-img": {
+        "props": {
+        "src": "/arquivos/cliente03.jpg", 
+        "width": "100%" 
+        }
+    },
+    "rich-text#cliente-home3-title": {
+        "props": {
+        "text": "## FAMÍLIA JUSTUS ##",
+        "blockClass": "cliente-home-title"
+        }
+    }, 
+    
+    "flex-layout.col#cliente-home4": {
+        "props": {
+        "verticalAlign": "top",
+        "horizontalAlign": "center"
+        },
+        "children": [
+        "image#cliente-home4-img",
+        "rich-text#cliente-home4-title" 
+        ]
+    },
+    "image#cliente-home4-img": {
+        "props": {
+        "src": "/arquivos/cliente04.jpg", 
+        "width": "100%" 
+        }
+    },
+    "rich-text#cliente-home4-title": {
+        "props": {
+        "text": "## SABRINA SATO ##",
+        "blockClass": "cliente-home-title"
+        }
+    }, 
+    
+    "flex-layout.col#cliente-home5": {
+        "props": {
+        "verticalAlign": "top",
+        "horizontalAlign": "center"
+        },
+        "children": [
+        "image#cliente-home5-img",
+        "rich-text#cliente-home5-title" 
+        ]
+    },
+    "image#cliente-home5-img": {
+        "props": {
+        "src": "/arquivos/cliente05.jpg", 
+        "width": "100%" 
+        }
+    },
+    "rich-text#cliente-home5-title": {
+        "props": {
+        "text": "## KARINA BACCHI ##",
+        "blockClass": "cliente-home-title"
+        }
+    }, 
+    
+    "flex-layout.col#cliente-home6": {
+        "props": {
+        "verticalAlign": "top",
+        "horizontalAlign": "center"
+        },
+        "children": [
+        "image#cliente-home6-img",
+        "rich-text#cliente-home6-title" 
+        ]
+    },
+    "image#cliente-home6-img": {
+        "props": {
+        "src": "/arquivos/cliente01.jpg", 
+        "width": "100%" 
+        }
+    },
+    "rich-text#cliente-home6-title": {
+        "props": {
+        "text": "## TICIANE PINHEIRO ##",
+        "blockClass": "cliente-home-title"
+        }
+    }
+}

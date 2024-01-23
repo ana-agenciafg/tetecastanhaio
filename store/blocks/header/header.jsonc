@@ -7,68 +7,91 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "sticky-layout#main-header"
     ]
-  },
-
-  "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
+  },  
+  "sticky-layout#main-header": {
     "props": {
+      "blockClass": ["main-header","sticky-header"],
       "fullWidth": true
-    }
+    },
+    "children": ["flex-layout.row#itens-header"]
   },
-  
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+  "flex-layout.row#itens-header": {
+    "props": { 
+      "horizontalAlign": "between",
+      "verticalAlign": "middle"
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "flex-layout.row#header-col1",
+      "flex-layout.row#header-col2"
     ]
   },
-  "flex-layout.col#spacer": {
+  
+  "flex-layout.row#header-col1": {
     "props": {
-      "width": "grow"
-    }
-  },
-  "sticky-layout#4-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#4-desktop"]
-  },
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-header",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
+      "blockClass": "header-col1", 
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "colSizing": "auto",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "width": "85%"
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
+      "flex-layout.col#category-menu"
+    ]
+  },
+  "flex-layout.row#header-col2": {
+    "props": {
+      "blockClass": "header-col2",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "width": "13%"
+    },
+    "children": [ 
+      "flex-layout.col#pesquisaTopoDesk", 
       "login",
       "minicart.v2"
     ]
+  }, 
+  "flex-layout.col#pesquisaTopoDesk": {
+    "children": ["search-bar#custom","image#pesquisaTopo"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "pesquisaTopoDesk"
+    }
   },
+  "flex-layout.col#pesquisaTopoMob": {
+    "children": ["search-bar#custom"],
+    "props": { 
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "pesquisaTopoMob"
+    }
+  },
+  "image#pesquisaTopo": {
+    "props": { 
+      "src": "/arquivos/busca.png",
+      "blockClass": "img-icone-pesquisa"
+    }
+  },
+  "search-bar#custom":{
+    "props": {
+      "placeholder": "O que procura hoje?",
+      "width": "500px"
+    }
+  },
+
   "flex-layout.col#logo-desktop": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "header-logo-desktop"
     },
-    "children": ["logo#desktop"]
+    "children": ["image#logo"]
   },
   "flex-layout.col#category-menu": {
     "props": {
@@ -76,34 +99,54 @@
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
-  "logo#desktop": {
+  "image#logo": {
     "props": {
-      "title": "Logo",
+      "title": "Tetê Castanha",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
+      "src": "assets/imgs/logobranco.png",
+      "width": "100%",
+      "height": "auto",
+      "link": {
+        "url": "/"
+      }
     }
   },
+
+  
   "header-layout.mobile": {
     "children": ["sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
+      "drawer", 
+      "flex-layout.col#logo-desktop",
       "minicart.v2"
     ],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
+      "horizontalAlign": "between",
+      "verticalAlign": "middle",
       "fullWidth": true
+    }
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "flex-layout.col#pesquisaTopoMob"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile-pesquisa", 
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "width": "100%" 
+
     }
   },
   "drawer": {
@@ -112,22 +155,20 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-bouquets-mobile",
+      "menu-item#category-dois-mobile",
+      "menu-item#category-quatro",
+      "menu-item#category-muranos-mobile", 
+      "menu-item#category-tres",
+      "menu-item#category-cinco", 
+      "menu-item#category-um",
+      "menu-item#category-seis",
+      "menu-item#category-minha-conta-mobile",
+      "menu-item#category-meus-pedidos-mobile"
     ],
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "menu-mobile-menu"
     }
-  },
-
-  "logo#mobile": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
-    }
-  }
+  } 
 }
