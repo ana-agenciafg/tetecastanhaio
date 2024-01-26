@@ -1,9 +1,16 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
+    "title": "Menu Desktop",
     "props": {
       "experimentalOptimizeRendering": true,
       "blockClass": "menu-principal-header"
     },
+    "children": [
+      "disposition-layout#disposicao-dos-itens-desktop"
+    ]
+  },
+  "disposition-layout#disposicao-dos-itens-desktop": {
+    "title": "Ordem dos Itens",
     "children": [
       "menu-item#category-um",
       "menu-item#category-dois",
@@ -11,7 +18,29 @@
       "menu-item#category-quatro",
       "menu-item#category-cinco", 
       "menu-item#category-seis" 
-    ]
+    ],
+    "props": {
+      "disposition": [
+        { 
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        }
+      ]
+    }
   },
 
   // ITENS NIVEL 1 DO MENU ____ 

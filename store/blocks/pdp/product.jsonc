@@ -167,7 +167,7 @@
       "flex-layout.row#selling-price",
       "product-installments",  
       "sku-selector", 
-      "product-assembly-options",
+      // "product-assembly-options",
       "product-gifts",
       "condition-layout.product#buy-button",
       "product-separator",

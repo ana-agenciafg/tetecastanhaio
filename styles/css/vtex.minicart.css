@@ -16,6 +16,25 @@
     font-family: 'Acrom-Medium';
     font-size: 14px;
 }
+.popupArrowUp{
+    background: transparent;
+    width: 100%;
+    height: 30px;
+    transform: unset;
+    z-index: 1;
+    right: 0;
+    top: -30px;
+}
+.minicartEmptyStateContainer{
+    padding: 30px 20px;
+}
+.minicartEmptyStateContainer :global(.vtex-rich-text-0-x-paragraph){
+    font-size: 0;
+}
+.minicartEmptyStateContainer :global(.vtex-rich-text-0-x-paragraph)::before{
+    content: "Carrinho vazio.";
+    font-size: 14px;
+}
 .drawerContent::before {
     content: "CARRINHO";
     position: absolute;
