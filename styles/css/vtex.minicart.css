@@ -125,5 +125,14 @@
     padding: 0;
 }
 
-
-
+@media (min-width: 640px) { 
+    .minicartProductListContainer::before{
+        content: "CARRINHO"; 
+        font-size: 18px;
+        font-family: 'Acrom-Medium'; 
+        color: #5c7f71;
+        letter-spacing: 1px;
+        padding: 20px;
+        display: block;
+    }
+}

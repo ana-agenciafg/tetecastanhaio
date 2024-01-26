@@ -301,21 +301,37 @@
 
   "flex-layout.row#footer-selo-vtex": {
     "children": [
-      "image#footer-selo-vtex"
+      "image#footer-selo-vtex",
+      "image#footer-selo-fg"
     ],
     "props": {
+      "blockClass": "selos-footer",
+      "preserveLayoutOnMobile": true,
       "horizontalAlign": "center",
       "verticalAlign": "middle",
-      "marginTop": 1,
+      "marginTop": 3,
       "marginBottom": 5
     }
   },
   "image#footer-selo-vtex": {
     "props": {
-      "src": "assets/imgs/icones/logo-vtex-pink.svg",
-      "maxHeight": "43px",
-      "maxWidth": "115px",
-      "blockClass": "footer-selo-vtex"
+      "src": "assets/imgs/icones/logo-vtex-pink.svg", 
+      "width": "68px",
+      "blockClass": "footer-selo-vtex",
+      "link":{
+        "url": "https://vtex.com/br-pt/vtex-io/",
+        "newTab": true
+      }
+    }
+  },
+  "image#footer-selo-fg": {
+    "props": {
+      "src": "assets/imgs/icones/logo-fg.svg",
+      "blockClass": "footer-selo-fg",
+      "link":{
+        "url": "https://agenciafg.com.br/",
+        "newTab": true
+      }
     }
   },
   

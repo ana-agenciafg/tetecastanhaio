@@ -1,0 +1,9 @@
+:global(.vtex-product-summary-2-x-container) :global(.bg-disabled){
+  background-image: unset !important; 
+} 
+
+@media (min-width: 640px) { 
+  :global(.vtex-product-summary-2-x-container) :global(.bg-disabled){ 
+    margin-top: 40px !important;
+  } 
+} 

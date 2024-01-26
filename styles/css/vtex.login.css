@@ -19,4 +19,24 @@
 }
 .emailPasswordOptionBtn :global(.vtex-button):hover,.accessCodeOptionBtn :global(.vtex-button):hover{
     background-color: #5c7f71d0 !important;
+} 
+.sendButton :global(.vtex-button):hover{
+    background-color: #5c7f71;
+    border-color: #5c7f71;
+    opacity: .8;
+}
+@media (max-width: 639px) { 
+    .loginOptionsContainer{
+        margin-top: 40px;
+    }
+}
+@media (min-width: 640px) { 
+    .loginOptionsContainer{
+        margin-right: 50px;
+    }
+    .content--emailAndPassword{
+        align-items: center;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    } 
 }

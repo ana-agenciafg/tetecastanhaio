@@ -279,6 +279,10 @@
 .flexRowContent--hover-submenu-header{
   align-items: center;
 }
+.flexRowContent--selos-footer :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  width: fit-content !important;
+  margin: 0 20px;
+}
 @media (min-width: 640px) {   
   .flexCol--header-logo-desktop{
       margin-right: 40px;

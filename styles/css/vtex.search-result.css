@@ -1,7 +1,11 @@
+.buttonShowMore :global(.vtex-button):hover{
+  background-color: #5c7f71;
+  border-color: #5c7f71;
+  opacity: .8;
+}
 .gallery {
   padding: 0;
-}
-
+} 
 .galleryLayoutOptionButton {
   background-color: #F0F0F0;
   color: #3F3F40;

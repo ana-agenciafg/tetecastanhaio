@@ -16,13 +16,13 @@
 .imageElementLink--whats-flutuante {
   bottom: 3%;
   position: fixed;
-  right: 3%;
-  width: 60px;
+  right: 2%;
+  width: 50px;
   z-index: 99;
 }
 .notificationBarContainer {
   background-color: #e6f1e6;
-  color: #03034e;
+  color: #5c7f71;
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;

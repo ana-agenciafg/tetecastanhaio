@@ -12,7 +12,7 @@
   },  
   "sticky-layout#main-header": {
     "props": {
-      "blockClass": ["main-header","sticky-header"],
+      "blockClass": ["style-geral","main-header","sticky-header"],
       "fullWidth": true
     },
     "children": ["flex-layout.row#itens-header"]
@@ -118,6 +118,7 @@
   },
   "sticky-layout#1-mobile": {
     "children": [
+      "style-geral",
       "flex-layout.row#1-mobile",
       "flex-layout.row#2-mobile"
     ]

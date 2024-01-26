@@ -1,5 +1,8 @@
 {
     "selo-new-collection": {
         "component": "SeloNewCollection"
+    },
+    "style-geral": {
+        "component": "StyleGeral"
     }
 }

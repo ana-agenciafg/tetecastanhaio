@@ -19,7 +19,7 @@
   .container :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
   }
-}
+} 
 .container :global(.vtex-button){ 
   align-items: center;
   background-color: #fff;
