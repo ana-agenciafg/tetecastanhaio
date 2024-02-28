@@ -1,6 +1,11 @@
 :global(.vtex-product-summary-2-x-container) :global(.bg-disabled){
   background-image: unset !important; 
+  text-indent: 0;
 } 
+
+:global(span[data-specification-name="Tipo de arranjo"]),:global(span[data-specification-name="Tipo de Flores"]) {
+  display: none;
+}
 
 @media (min-width: 640px) { 
   :global(.vtex-product-summary-2-x-container) :global(.bg-disabled){ 

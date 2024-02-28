@@ -45,7 +45,7 @@
   },  
   "product-specification-text#value": {
     "props": {
-      "message": "{specificationName}: {specificationValue}"
+      "message": "{specificationName}: {specificationValue}" 
     }
   }
 }

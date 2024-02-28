@@ -81,3 +81,9 @@
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
+
+@media (max-width: 639px) {
+  .installments--summary {     
+    font-size: 12px
+  }
+}

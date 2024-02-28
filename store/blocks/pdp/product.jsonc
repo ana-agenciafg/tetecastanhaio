@@ -3,6 +3,7 @@
     "children": [ 
       "responsive-layout.desktop#breadcrumb",
       "responsive-layout.phone#breadcrumb",
+      // "flex-layout.row#modal-compre-junto",
       "responsive-layout.desktop#mainContainer",
       "responsive-layout.phone#mainContainer",
       "shelf.relatedProducts", 
@@ -131,7 +132,7 @@
       "preventVerticalStretch": true,
       "rowGap": 0
     },
-    "children": [
+    "children": [ 
       "flex-layout.row#product-name",
       "product-rating-summary",
       "product-identifier.product",

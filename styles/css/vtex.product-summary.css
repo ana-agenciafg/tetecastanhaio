@@ -92,7 +92,7 @@
 @media (max-width: 640px) {   
   .imageContainer {
     text-align: center;
-    height: 227px;
+    min-height: 227px;
     display: flex;
     align-items: center;
     justify-content: center;

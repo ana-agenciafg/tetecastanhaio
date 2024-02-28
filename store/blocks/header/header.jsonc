@@ -7,6 +7,7 @@
   },
   "header-layout.desktop": {
     "children": [
+      // "minicart.v2#modal",
       "sticky-layout#main-header"
     ]
   },  
@@ -15,7 +16,7 @@
       "blockClass": ["style-geral","main-header","sticky-header"],
       "fullWidth": true
     },
-    "children": ["flex-layout.row#itens-header"]
+    "children": [ "flex-layout.row#itens-header"]
   },
   "flex-layout.row#itens-header": {
     "props": { 
@@ -114,7 +115,9 @@
 
   
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      // "minicart.v2#modal",
+      "sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
     "children": [
