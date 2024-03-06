@@ -5,7 +5,7 @@
       "context": {
         "skusFilter": "ALL",
         "maxItemsPerPage": 12,
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
@@ -18,7 +18,7 @@
         "hideUnavailableItems": true,
         "maxItemsPerPage": 12,
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
@@ -29,7 +29,7 @@
       "context": {
         "skusFilter": "ALL",
         "maxItemsPerPage": 12,
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
@@ -40,7 +40,7 @@
       "context": {
         "skusFilter": "ALL",
         "maxItemsPerPage": 12,
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
@@ -50,7 +50,7 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "default"
       }
     }
   },
