@@ -1,9 +1,9 @@
 :global(.vtex-product-summary-2-x-container) :global(.bg-disabled){
   background-image: unset !important; 
-  text-indent: 0;
+  text-indent: 0!important; 
 } 
 
-:global(span[data-specification-name="Tipo de arranjo"]),:global(span[data-specification-name="Tipo de Flores"]) {
+:global(span[data-specification-name="Tipo de arranjo"]),:global(span[data-specification-name="Tipo de Flores"]), :global(.vtex-store-components-3-x-shippingTableCell:nth-child(2)) {
   display: none;
 }
 

@@ -1,8 +1,6 @@
 {
   "add-to-cart-button": {
-    "props": {
-      "addToCartFeedback": "customEvent", 
-      // "customPixelEventId": "add-to-cart-button",
+    "props": { 
       "customPixelEventId": "add-to-cart-button#modal",
       "text": "COMPRAR"
     }
@@ -16,7 +14,7 @@
       "openOnHover": true
     },
     "children": ["minicart-base-content"]
-  }
+  } 
 
 
   //MODAL PRODUTO ADICIONADO
