@@ -188,7 +188,7 @@
   font-size: 14px!important;
 }
 .flexRowContent--shipping-simulator-pdp :global(.vtex-input__label)::after{
-  content: "Fazemos entregas todos os dias, escolha a melhor data para enviar ou receber suas flores"; 
+  content: "Fazemos entregas todos os dias, escolha a melhor data para enviar ou receber suas flores. Nossas entregas são feitas entre às 10h e 19h"; 
   display: block;
   font-size: 12px; 
   margin-top: 11px; 

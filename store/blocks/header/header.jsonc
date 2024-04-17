@@ -8,12 +8,13 @@
   "header-layout.desktop": {
     "children": [
       // "minicart.v2#modal",
+      "style-geral",
       "sticky-layout#main-header"
     ]
   },  
   "sticky-layout#main-header": {
     "props": {
-      "blockClass": ["style-geral","main-header","sticky-header"],
+      "blockClass": ["main-header","sticky-header"],
       "fullWidth": true
     },
     "children": [ "flex-layout.row#itens-header"]
@@ -117,11 +118,11 @@
   "header-layout.mobile": {
     "children": [
       // "minicart.v2#modal",
+      "style-geral",
       "sticky-layout#1-mobile"]
   },
   "sticky-layout#1-mobile": {
-    "children": [
-      "style-geral",
+    "children": [ 
       "flex-layout.row#1-mobile",
       "flex-layout.row#2-mobile"
     ]
