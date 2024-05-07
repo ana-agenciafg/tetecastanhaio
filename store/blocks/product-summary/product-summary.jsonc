@@ -4,7 +4,7 @@
       "stack-layout#prodsum",
       "product-summary-name",
       "selo-new-collection",
-      // "flex-layout.col#productRating",  
+      // "flex-layout.col#productRating",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
       "condition-layout.product#summary-buy-button"
@@ -17,7 +17,7 @@
           "subject": "categoryId",
           "arguments": {
             "id": "51"
-          } 
+          }
         }
       ],
       "Then": "flex-layout.row#summary-buy-button-assinatura",
@@ -25,12 +25,12 @@
     }
   },
   "flex-layout.row#summary-buy-button-assinatura": {
-    "props": { 
+    "props": {
       "blockClass": ["category-assinatura"]
     },
     "children": ["add-to-cart-button"]
   },
-  "flex-layout.row#summary-buy-button": { 
+  "flex-layout.row#summary-buy-button": {
     "children": ["add-to-cart-button"]
   },
 
@@ -43,7 +43,7 @@
 
   "stack-layout#prodsum": {
     "children": [
-      "product-summary-image#shelf" 
+      "product-summary-image#shelf"
       // "vtex.product-highlights@2.x:product-highlights#collection",
       // "modal-trigger#quickview" // Check quickview.jsonc
     ]
@@ -51,7 +51,7 @@
 
   "product-summary-image#shelf": {
     "props": {
-      "showBadge": false 
+      "showBadge": false
     }
   },
 
@@ -84,7 +84,7 @@
     "props": {
       "colGap": 2,
       "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true, 
+      "preventHorizontalStretch": true,
       "marginBottom": 4,
       "horizontalAlign": "center",
       "verticalAlign": "middle"
@@ -110,9 +110,50 @@
     }
   },
   "product-price-savings#summary": {
-    "props": {  
+    "props": {
       "blockClass": "summary",
       "message": "{savingsPercentage} OFF"
+    }
+  },
+
+  "product-summary.shelf#modal": {
+    "children": [
+      "flex-layout.row#summary-modal",
+      "add-to-cart-button#add-modal"
+    ],
+    "props": {
+      "blockClass": "summary-modal"
+    }
+  },
+
+  "flex-layout.row#summary-modal": {
+    "children": [
+      "flex-layout.col#summary-modal-left",
+      "flex-layout.col#summary-modal"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true, 
+      "colGap": 6,
+      "blockClass": [
+        "summary"
+      ]
+    }
+  },
+
+  "flex-layout.col#summary-modal-left": {
+    "children": ["stack-layout#prodsum"],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "30%"
+    }
+  },
+
+  "flex-layout.col#summary-modal": {
+    "children": ["product-summary-name", "product-selling-price#summary"],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "70%"
     }
   }
 }

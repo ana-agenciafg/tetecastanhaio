@@ -192,7 +192,21 @@
     margin: auto;
     border-radius: 0px;
     background: transparent;
-    max-width: 330px!important;
+    max-width: 500px!important;
+}
+
+.drawerContent--add-modal::before{
+    display: none;
+}
+
+.drawerContent--add-modal :global(.vtex-slider-layout-0-x-slide--comprejunto){
+    min-height: auto!important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.drawerContent--add-modal :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf){
+    margin: 0;
 }
 
 .drawer--add-modal .minicartTitle{ 
@@ -256,4 +270,28 @@
 
 .closeIcon--add-modal{
     display: none; 
+}
+
+.drawerContent--add-modal :global(.vtex-rich-text-0-x-paragraph--shelfTitle){
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+}
+
+.drawerContent--add-modal :global(.vtex-store-link-0-x-link--close-modal){
+    border: none;
+    width: 400px;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    background: #f0f0f0;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
 }

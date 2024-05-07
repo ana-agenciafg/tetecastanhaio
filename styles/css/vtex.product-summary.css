@@ -98,3 +98,48 @@
     justify-content: center;
   }
 }
+
+.container--summary-modal{
+  max-width: 100%!important;
+}
+
+.container--summary-modal .imageContainer{
+  height: auto;
+  border: none;
+  min-height: auto;
+}
+
+.container--summary-modal .brandName{
+  min-height: auto;
+  color: #000;
+  font-size: 16px;
+}
+
+.container--summary-modal .nameContainer{
+  text-align: left;
+  justify-content: left;
+}
+
+.container--summary-modal :global(.vtex-product-price-1-x-sellingPriceValue--summary){
+  font-size: 25px;
+}
+
+.container--summary-modal :global(.vtex-button){
+  max-width: 400px;
+  background-color: #00a65a;
+  border: none;
+  margin-top: 30px;
+  color: #fff;
+  width: 100%;
+  padding: 10px; 
+  font-size: 14px;
+  background-image: none;
+  border-radius: 0px;
+  height: 35px;
+}
+
+.container--summary-modal :global(.vtex-flex-layout-0-x-flexRowContent--summary){
+  border-top: 1px solid #f6f5f5;
+  border-bottom: 1px solid #f6f5f5;
+  padding: 20px 0px;
+}

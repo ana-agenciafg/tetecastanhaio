@@ -6,11 +6,14 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      // "minicart.v2#modal",
+    "children": [ 
+      "minicart.v2#modal",
       "style-geral",
       "sticky-layout#main-header"
-    ]
+    ],
+    "props": {
+      "title": "Header Desktop"
+    }
   },  
   "sticky-layout#main-header": {
     "props": {
@@ -116,10 +119,13 @@
 
   
   "header-layout.mobile": {
-    "children": [
-      // "minicart.v2#modal",
+    "children": [ 
+      "minicart.v2#modal",
       "style-geral",
-      "sticky-layout#1-mobile"]
+      "sticky-layout#1-mobile"],
+      "props": {
+        "title": "Header Mobile"
+      }
   },
   "sticky-layout#1-mobile": {
     "children": [ 

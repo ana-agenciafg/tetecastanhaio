@@ -1,19 +1,19 @@
 {
   "store.product": {
-    "children": [ 
+    "children": [
       "responsive-layout.desktop#breadcrumb",
       "responsive-layout.phone#breadcrumb",
       // "flex-layout.row#modal-compre-junto",
       "responsive-layout.desktop#mainContainer",
       "responsive-layout.phone#mainContainer",
-      "shelf.relatedProducts", 
+      "shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers"
     ]
-  }, 
+  },
   "responsive-layout.desktop#breadcrumb": {
     "children": ["flex-layout.row#product-breadcrumb"]
-  }, 
+  },
   "responsive-layout.phone#breadcrumb": {
     "children": ["flex-layout.row#product-breadcrumb-mobile"]
   },
@@ -39,14 +39,14 @@
   "flex-layout.row#description": {
     "props": {
       "marginBottom": 3,
-      "marginTop": 5 
+      "marginTop": 5
     },
     "children": ["product-description"]
   },
- 
+
   "responsive-layout.desktop#mainContainer": {
     "children": ["condition-layout.product#availability"]
-  }, 
+  },
   "responsive-layout.phone#mainContainer": {
     "children": ["condition-layout.product#availability-mobile"]
   },
@@ -79,17 +79,17 @@
       "marginTop": 7,
       "colGap": 8,
       "rowGap": 7,
-      "marginBottom": 7 
+      "marginBottom": 7
     },
     "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
-  }, 
+  },
   "flex-layout.row#product-main-mobile": {
     "children": ["flex-layout.col#mobile-col"]
-  }, 
+  },
 
   "stack-layout": {
     "props": {
-      "blockClass": "product" 
+      "blockClass": "product"
     },
     "children": [
       "flex-layout.row#product-image",
@@ -132,32 +132,31 @@
       "preventVerticalStretch": true,
       "rowGap": 0
     },
-    "children": [ 
+    "children": [
       "flex-layout.row#product-name",
       "product-rating-summary",
       "product-identifier.product",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "product-installments",  
-      "sku-selector", 
+      "product-installments",
+      "sku-selector",
       // "product-assembly-options",
-      "product-gifts", 
+      "product-gifts",
       "condition-layout.product#buy-button",
       "product-separator",
       "availability-subscriber",
       "flex-layout.row#shipping-simulator-pdp",
       "product-separator",
-      "flex-layout.row#description", 
+      "flex-layout.row#description",
       "product-specification-group#table"
     ]
-  }, 
+  },
 
-  
   "flex-layout.col#mobile-col": {
     "props": {
       "preventVerticalStretch": true,
       "paddingRight": 4,
-      "paddingLeft": 4 
+      "paddingLeft": 4
     },
     "children": [
       "flex-layout.row#product-name",
@@ -166,8 +165,8 @@
       "stack-layout",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "product-installments",  
-      "sku-selector", 
+      "product-installments",
+      "sku-selector",
       // "product-assembly-options",
       "product-gifts",
       "condition-layout.product#buy-button",
@@ -176,15 +175,15 @@
       "flex-layout.row#shipping-simulator-pdp",
       "sticky-layout#compra-flutuante",
       "product-separator",
-      "flex-layout.row#description", 
+      "flex-layout.row#description",
       "product-specification-group#table"
     ]
-  }, 
+  },
 
   "flex-layout.row#shipping-simulator-pdp": {
     "props": {
       "blockClass": "shipping-simulator-pdp",
-      "marginTop": 5 
+      "marginTop": 5
     },
     "children": ["shipping-simulator"]
   },
@@ -210,7 +209,7 @@
           "subject": "categoryId",
           "arguments": {
             "id": "51"
-          } 
+          }
         }
       ],
       "Then": "flex-layout.row#buy-button-assinatura",
@@ -231,9 +230,9 @@
     "props": {
       "marginTop": 4,
       "marginBottom": 7,
-      "blockClass": "add-to-cart-button" 
+      "blockClass": "add-to-cart-button"
     },
-    "children": ["add-to-cart-button"]
+    "children": ["add-to-cart-button#modal-add-pdp"]
   },
 
   "flex-layout.row#product-availability": {
@@ -241,7 +240,7 @@
       "colGap": 7,
       "marginTop": 4,
       "marginBottom": 7,
-      "paddingTop": 7 
+      "paddingTop": 7
     },
     "children": [
       "flex-layout.col#stack",
@@ -278,10 +277,10 @@
       }
     }
   },
- 
+
   "sticky-layout#compra-flutuante": {
     "props": {
-      "position": "bottom", 
+      "position": "bottom",
       "verticalAlign": "middle",
       "blockClass": "compra-flutuante"
     },
@@ -292,7 +291,7 @@
       "flex-layout.col#col1",
       "flex-layout.col#col2"
     ],
-    "props": { 
+    "props": {
       "preserveLayoutOnMobile": true,
       "blockClass": "compra-flutuante"
     }
@@ -305,7 +304,7 @@
     ],
     "props": {
       "verticalAlign": "middle",
-      "width": "50%" 
+      "width": "50%"
     }
   },
   "flex-layout.col#col2": {
@@ -314,5 +313,245 @@
       "verticalAlign": "middle",
       "width": "50%"
     }
-  }
+  },
+
+  "condition-layout.product#modal-01": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "9"
+          }
+        }
+      ],
+      "Then": "list-context.product-list#modal-compre-junto-01"
+    }
+  },
+
+  "list-context.product-list#modal-compre-junto-01": {
+    "blocks": ["product-summary.shelf#modal"],
+    "children": ["slider-layout#modalcomprejunto"],
+    "props": {
+      "collection": "145",
+      "maxItems": "1"
+    }
+  },
+
+  "condition-layout.product#modal-02": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "8"
+          }
+        }
+      ],
+      "Then": "list-context.product-list#modal-compre-junto-02"
+    }
+  },
+
+  "list-context.product-list#modal-compre-junto-02": {
+    "blocks": ["product-summary.shelf#modal"],
+    "children": ["slider-layout#modalcomprejunto"],
+    "props": {
+      "collection": "146",
+      "maxItems": "1"
+    }
+  },
+
+  "condition-layout.product#modal-03": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "36"
+          }
+        }
+      ],
+      "Then": "list-context.product-list#modal-compre-junto-03"
+    }
+  },
+
+  "list-context.product-list#modal-compre-junto-03": {
+    "blocks": ["product-summary.shelf#modal"],
+    "children": ["slider-layout#modalcomprejunto"],
+    "props": {
+      "collection": "147",
+      "maxItems": "1"
+    }
+  },
+
+  "condition-layout.product#modal-04": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "38"
+          }
+        }
+      ],
+      "Then": "list-context.product-list#modal-compre-junto-04"
+    }
+  },
+
+  "list-context.product-list#modal-compre-junto-04": {
+    "blocks": ["product-summary.shelf#modal"],
+    "children": ["slider-layout#modalcomprejunto"],
+    "props": {
+      "collection": "148",
+      "maxItems": "1"
+    }
+  },
+
+  "condition-layout.product#modal-05": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "18"
+          }
+        }
+      ],
+      "Then": "list-context.product-list#modal-compre-junto-05"
+    }
+  },
+
+  "list-context.product-list#modal-compre-junto-05": {
+    "blocks": ["product-summary.shelf#modal"],
+    "children": ["slider-layout#modalcomprejunto"],
+    "props": {
+      "collection": "149",
+      "maxItems": "1"
+    }
+  },
+
+  "condition-layout.product#modal-06": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "44"
+          }
+        }
+      ],
+      "Then": "list-context.product-list#modal-compre-junto-06"
+    }
+  },
+
+  "list-context.product-list#modal-compre-junto-06": {
+    "blocks": ["product-summary.shelf#modal"],
+    "children": ["slider-layout#modalcomprejunto"],
+    "props": {
+      "collection": "150",
+      "maxItems": "1"
+    }
+  },
+
+  "condition-layout.product#modal-08": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "10"
+          }
+        }
+      ],
+      "Then": "list-context.product-list#modal-compre-junto-08"
+    }
+  },
+
+  "list-context.product-list#modal-compre-junto-08": {
+    "blocks": ["product-summary.shelf#modal"],
+    "children": ["slider-layout#modalcomprejunto"],
+    "props": {
+      "collection": "152",
+      "maxItems": "1"
+    }
+  },
+
+  "condition-layout.product#modal-09": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "11"
+          }
+        }
+      ],
+      "Then": "list-context.product-list#modal-compre-junto-09"
+    }
+  },
+
+  "list-context.product-list#modal-compre-junto-09": {
+    "blocks": ["product-summary.shelf#modal"],
+    "children": ["slider-layout#modalcomprejunto"],
+    "props": {
+      "collection": "153",
+      "maxItems": "1"
+    } 
+  },  
+  "condition-layout.product#modal-padrao": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "11"
+          } 
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "10"
+          } 
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "44"
+          } 
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "18"
+          } 
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "38"
+          } 
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "36"
+          } 
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "8"
+          } 
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "9"
+          }
+        }
+      ],  
+      "matchType": "any",
+      "Else": "list-context.product-list#modal-compre-junto-02" 
+    }
+  } 
 }
